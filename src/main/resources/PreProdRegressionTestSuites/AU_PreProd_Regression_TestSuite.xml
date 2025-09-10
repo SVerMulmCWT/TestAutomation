@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" > -->
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" parallel="tests" thread-count="2">
+	
+	<listeners>
+		<!--  --><listener class-name="analyzer.MyTransformer"></listener>
+		<listener class-name="utilityClasses.Listeners"></listener>
+	</listeners>
+	
+	<test name="AU PreProd MyMatrix Regression Testsuite">
+		<parameter name="browser" value="chrome"></parameter>
+		<!-- <parameter name="browser" value="edge"></parameter> -->
+		<parameter name="website" value="https://accessmatrixuat.mycwt.com/ListUsers.aspx"></parameter>
+		<parameter name="userid" value="u501sxv"></parameter>
+		<parameter name="password" value="Welcome2cwt2026!"></parameter>
+		<parameter name="dataTable" value="preprod\AU_PreProd_DataTable.xlsx"></parameter>
+		
+		<!-- Jenkins Variables -->
+		<!-- <parameter name="browser" value="${browser}"></parameter>
+		<parameter name="website" value="${website}"></parameter>
+		<parameter name="userid" value="${userid}"></parameter> -->
+		
+		<classes>
+			<class name="general.LoginTest"></class>
+			<class name="general.ChangeBranchTest"></class>
+			<!-- <class name="general.ClientfileSearchTest"></class>
+			<class name="production_itineraries.AirItineraryTest"></class>
+			<class name="production_itineraries.HotelItineraryTest"></class>
+			<class name="production_itineraries.CarItineraryTest"></class>
+			<class name="production_itineraries.TourItineraryTest"></class>
+			<class name="production_itineraries.ShipItineraryTest"></class>
+			<class name="production_itineraries.InsuranceItineraryTest"></class>
+			<class name="production_itineraries.MiscItineraryTest"></class>
+			<class name="production_itineraries.RailItineraryTest"></class>
+			<class name="production_itineraries.BusItineraryTest"></class>
+			<class name="production_accounting.BSPTicketTest"></class>
+			<class name="production_accounting.NonBSPTicketTest"></class> -->
+			<class name="queues.RMITest"></class>
+			<class name="general.LogoutTest"></class>
+		</classes>
+	</test>
+	
+</suite>

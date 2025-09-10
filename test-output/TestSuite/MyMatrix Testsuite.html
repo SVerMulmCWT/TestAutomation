@@ -1,0 +1,329 @@
+<html>
+<head>
+<title>TestNG:  MyMatrix Testsuite</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>MyMatrix Testsuite</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>30/0/2</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Aug 11 19:43:51 CDT 2025</td>
+</tr>
+<tr><td>Total time:</td><td>374 seconds (374263 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='production_itineraries.CarItineraryTest.testcases_CarItineraryTest()'><b>testcases_CarItineraryTest</b><br>Test class: production_itineraries.CarItineraryTest<br>Parameters: Y, Check Car Itinerary #1, D&G, S55790502G, 1, SIXT AUTO(SXC), CDMR - COMPACT 4DR CAR MAN AC, RZESZOW(RZE ), 04Feb2025, null, 1</td>
+<td></td>
+<td>13</td>
+<td>production_itineraries.CarItineraryTest@37271612</td></tr>
+<tr>
+<td title='general.ClientfileSearchTest.testcases_ClientfileSearchTest()'><b>testcases_ClientfileSearchTest</b><br>Test class: general.ClientfileSearchTest<br>Parameters: Y, Search Clientfile via Name & Departure Date, D&G, AMBROSE, , , 01Aug2025, 11Aug2025, , , , , , , , , , null, 4</td>
+<td></td>
+<td>10</td>
+<td>general.ClientfileSearchTest@c86b9e3</td></tr>
+<tr>
+<td title='general.ClientfileSearchTest.testcases_ClientfileSearchTest()'><b>testcases_ClientfileSearchTest</b><br>Test class: general.ClientfileSearchTest<br>Parameters: Y, Search Clientfile via Document, D&G, , , , , , , , , , Ticket, 7100465435, , , , null, 7</td>
+<td></td>
+<td>16</td>
+<td>general.ClientfileSearchTest@c86b9e3</td></tr>
+<tr>
+<td title='general.ChangeBranchTest.testcases_ChangeBranchTest()'><b>testcases_ChangeBranchTest</b><br>Test class: general.ChangeBranchTest<br>Parameters: Y, Change Branch Test, D&G, U81687cwt, U81687,, null, 1</td>
+<td></td>
+<td>1</td>
+<td>general.ChangeBranchTest@6aaceffd</td></tr>
+<tr>
+<td title='general.ClientfileSearchTest.testcases_ClientfileSearchTest()'><b>testcases_ClientfileSearchTest</b><br>Test class: general.ClientfileSearchTest<br>Parameters: Y, Search Clientfile via Full Name, D&G, JOHNSON, ADAM, , , , , , , , , , , , , null, 1</td>
+<td></td>
+<td>19</td>
+<td>general.ClientfileSearchTest@c86b9e3</td></tr>
+<tr>
+<td title='production_itineraries.BusItineraryTest.testcases_BusItineraryTest()'><b>testcases_BusItineraryTest</b><br>Test class: production_itineraries.BusItineraryTest<br>Parameters: Y, Check Bus Itinerary #1, D&G, 2SU207322G, 1, GREYHOUND BUS(GB1), 9999, JACKSONVILLE(OAJB), NEWARK LIBERTY INTERNATIONAL APT(EWRB), 27Jun2025, , null, 1</td>
+<td></td>
+<td>12</td>
+<td>production_itineraries.BusItineraryTest@4e3958e7</td></tr>
+<tr>
+<td title='production_itineraries.TourItineraryTest.testcases_TourItineraryTest()'><b>testcases_TourItineraryTest</b><br>Test class: production_itineraries.TourItineraryTest<br>Parameters: Y, Check Tour Itinerary #2, D&G, , 2, EXPEDIA.COM(EX2), PHOENIX SKY HARBO(PHX ), *(ZZZ ), 09Dec2022, , null, 2</td>
+<td></td>
+<td>2</td>
+<td>production_itineraries.TourItineraryTest@ed7f8b4</td></tr>
+<tr>
+<td title='production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest()'><b>testcases_InsuranceItineraryTest</b><br>Test class: production_itineraries.InsuranceItineraryTest<br>Parameters: Y, Check Insurance Itinerary #1, D&G, V2H750P, 1, SATO SECURITY(SS2), GUAM ANTONIO B WON PAT INTERNATIONAL(GUM ), GUAM ANTONIO B WON PAT INTERNATIONAL(GUM ), , 21Aug2021, null, 1</td>
+<td></td>
+<td>13</td>
+<td>production_itineraries.InsuranceItineraryTest@38102d01</td></tr>
+<tr>
+<td title='production_itineraries.AirItineraryTest.testcases_AirItineraryTest()'><b>testcases_AirItineraryTest</b><br>Test class: production_itineraries.AirItineraryTest<br>Parameters: Y, Check Air Itinerary #1, D&G, S550777093G, 1, UNITED AIRLINES(UA ), 1966, K, AUSTIN BERGSTROM INTERNATIONAL APT(AUS ), HOUSTON GEORGE BUSH INTERCONTINENTAL AP(IAH ), 28Sep2024, null, 1</td>
+<td></td>
+<td>13</td>
+<td>production_itineraries.AirItineraryTest@10aa41f2</td></tr>
+<tr>
+<td title='general.LoginTest.testcases_LoginTest()'><b>testcases_LoginTest</b><br>Test class: general.LoginTest<br>Parameters: Y, D&G Production IRDB Login Test, D&G, , D&G IRDB, Y, null, 2</td>
+<td></td>
+<td>27</td>
+<td>general.LoginTest@445b295b</td></tr>
+<tr>
+<td title='general.ClientfileSearchTest.testcases_ClientfileSearchTest()'><b>testcases_ClientfileSearchTest</b><br>Test class: general.ClientfileSearchTest<br>Parameters: Y, Search Clientfile via Name & Booking Branch, D&G, AMBROSE, , , , , , , 0470, U80470, , , , , , null, 5</td>
+<td></td>
+<td>10</td>
+<td>general.ClientfileSearchTest@c86b9e3</td></tr>
+<tr>
+<td title='production_itineraries.AirItineraryTest.testcases_AirItineraryTest()'><b>testcases_AirItineraryTest</b><br>Test class: production_itineraries.AirItineraryTest<br>Parameters: Y, Check Air Itinerary #2, D&G, , 2, UNITED AIRLINES(UA ), 6035, K, HOUSTON GEORGE BUSH INTERCONTINENTAL AP(IAH ), KANSAS CITY INTERNATIONAL APT(MCI ), 28Sep2024, null, 2</td>
+<td></td>
+<td>2</td>
+<td>production_itineraries.AirItineraryTest@10aa41f2</td></tr>
+<tr>
+<td title='production_itineraries.MiscItineraryTest.testcases_AirItineraryTest()'><b>testcases_AirItineraryTest</b><br>Test class: production_itineraries.MiscItineraryTest<br>Parameters: Y, Check Misc/Other Itinerary #1, D&G, J47238911G, 1, SERVICE FEE CHARGE(SFC), PSEUDO DOMESTIC(XXX ), PSEUDO DOMESTIC(XXX ), 13Oct2025, , null, 1</td>
+<td></td>
+<td>13</td>
+<td>production_itineraries.MiscItineraryTest@37883b97</td></tr>
+<tr>
+<td title='general.ClientfileSearchTest.testcases_ClientfileSearchTest()'><b>testcases_ClientfileSearchTest</b><br>Test class: general.ClientfileSearchTest<br>Parameters: Y, Search Clientfile via Document, D&G, , , , , , , , , , Ticket, 7183155507, , , , null, 6</td>
+<td></td>
+<td>15</td>
+<td>general.ClientfileSearchTest@c86b9e3</td></tr>
+<tr>
+<td title='production_itineraries.ShipItineraryTest.testcases_ShipItineraryTest()'><b>testcases_ShipItineraryTest</b><br>Test class: production_itineraries.ShipItineraryTest<br>Parameters: Y, Check Ship Itinerary #1, D&G, R3N269330P, 1, ROW MSC CROCEIRE (KR(9MC), VENICE MARCO POLO APT(VCE ), VENICE MARCO POLO APT(VCE ), 06Jul2025, , null, 1</td>
+<td></td>
+<td>15</td>
+<td>production_itineraries.ShipItineraryTest@4c309d4d</td></tr>
+<tr>
+<td title='production_itineraries.TourItineraryTest.testcases_TourItineraryTest()'><b>testcases_TourItineraryTest</b><br>Test class: production_itineraries.TourItineraryTest<br>Parameters: Y, Check Tour Itinerary #1, D&G, H814848P, 1, VIATOR INC.(VI5), PHOENIX SKY HARBO(PHX ), *(ZZZ ), 09Dec2022, , null, 1</td>
+<td></td>
+<td>13</td>
+<td>production_itineraries.TourItineraryTest@ed7f8b4</td></tr>
+<tr>
+<td title='production_itineraries.ShipItineraryTest.testcases_ShipItineraryTest()'><b>testcases_ShipItineraryTest</b><br>Test class: production_itineraries.ShipItineraryTest<br>Parameters: Y, Check Ship Itinerary #2, D&G, , 2, ROW MSC CROCEIRE (KR(9MC), VENICE MARCO POLO APT(VCE ), VENICE MARCO POLO APT(VCE ), 06Jul2025, , null, 2</td>
+<td></td>
+<td>4</td>
+<td>production_itineraries.ShipItineraryTest@4c309d4d</td></tr>
+<tr>
+<td title='production_itineraries.HotelItineraryTest.testcases_HotelItineraryTest()'><b>testcases_HotelItineraryTest</b><br>Test class: production_itineraries.HotelItineraryTest<br>Parameters: Y, Check Hotel Itinerary #1, D&G, S550790502G, 1, HOLIDAY INN INC.(HIH), HOLIDAY INN EXP WIES, FRANKFURT INTERNATIONAL APT(FRA ), ABRAHAM-LINCOLN-STRASSE 1, 4906119547310, OQN, 05Feb2025, null, 1</td>
+<td></td>
+<td>13</td>
+<td>production_itineraries.HotelItineraryTest@3af9c5b7</td></tr>
+<tr>
+<td title='production_itineraries.RailItineraryTest.testcases_RailItineraryTest()'><b>testcases_RailItineraryTest</b><br>Test class: production_itineraries.RailItineraryTest<br>Parameters: Y, Check Rail Itinerary #2, D&G, , 2, AMTRAK(AV7), 2255, PHILADELPHIA - 30TH STREET STATION(PHLR), WASHINGTON - UNION STATION(WASR), 16Mar2024, C, null, 2</td>
+<td></td>
+<td>2</td>
+<td>production_itineraries.RailItineraryTest@6ab778a</td></tr>
+<tr>
+<td title='production_itineraries.RailItineraryTest.testcases_RailItineraryTest()'><b>testcases_RailItineraryTest</b><br>Test class: production_itineraries.RailItineraryTest<br>Parameters: Y, Check Rail Itinerary #1, D&G, S55798841G, 1, AMTRAK(AV7), 2108, WASHINGTON - UNION STATION(WASR), PHILADELPHIA - 30TH STREET STATION(PHLR), 13Mar2024, C, null, 1</td>
+<td></td>
+<td>10</td>
+<td>production_itineraries.RailItineraryTest@6ab778a</td></tr>
+<tr>
+<td title='production_accounting.NonBSPTicketTest.testcases_NonBSPTicketTest()'><b>testcases_NonBSPTicketTest</b><br>Test class: production_accounting.NonBSPTicketTest<br>Parameters: Y, Check Non-ARC Ticket #1, D&G, S55750230G, Non ARC Document, FPC, , 8084101111, null, 1</td>
+<td></td>
+<td>13</td>
+<td>production_accounting.NonBSPTicketTest@1dac5ef</td></tr>
+<tr>
+<td title='general.ClientfileSearchTest.testcases_ClientfileSearchTest()'><b>testcases_ClientfileSearchTest</b><br>Test class: general.ClientfileSearchTest<br>Parameters: Y, Search Clientfile via Client File Code, D&G, , , , , , , , , , , , , 2KD, , null, 8</td>
+<td></td>
+<td>11</td>
+<td>general.ClientfileSearchTest@c86b9e3</td></tr>
+<tr>
+<td title='general.LoginTest.testcases_LoginTest()'><b>testcases_LoginTest</b><br>Test class: general.LoginTest<br>Parameters: Y, D&G Production MyMatrix Login Test, D&G, , D&G MyMatrix, n, null, 3</td>
+<td></td>
+<td>23</td>
+<td>general.LoginTest@445b295b</td></tr>
+<tr>
+<td title='general.ChangeBranchTest.testcases_ChangeBranchTest()'><b>testcases_ChangeBranchTest</b><br>Test class: general.ChangeBranchTest<br>Parameters: Y, Change Branch Test, D&G, U811010B4, U81101,, null, 2</td>
+<td></td>
+<td>1</td>
+<td>general.ChangeBranchTest@6aaceffd</td></tr>
+<tr>
+<td title='general.ClientfileSearchTest.testcases_ClientfileSearchTest()'><b>testcases_ClientfileSearchTest</b><br>Test class: general.ClientfileSearchTest<br>Parameters: Y, Search Clientfile via Client File Number, D&G, , , , , , B320187653G, B320187653G, , , , , , , , null, 3</td>
+<td></td>
+<td>13</td>
+<td>general.ClientfileSearchTest@c86b9e3</td></tr>
+<tr>
+<td title='general.LoginTest.testcases_LoginTest()'><b>testcases_LoginTest</b><br>Test class: general.LoginTest<br>Parameters: Y, D&G Production CMR Login Test, D&G, , D&G CMR, Y, null, 1</td>
+<td></td>
+<td>29</td>
+<td>general.LoginTest@445b295b</td></tr>
+<tr>
+<td title='production_accounting.BSPTicketTest.testcases_BSPTicketTest()'><b>testcases_BSPTicketTest</b><br>Test class: production_accounting.BSPTicketTest<br>Parameters: Y, Check ARC Ticket #1, D&G, S55224023G, ARC Tickets, LH, , 7969026708, null, 1</td>
+<td></td>
+<td>11</td>
+<td>production_accounting.BSPTicketTest@77f80c04</td></tr>
+<tr>
+<td title='general.LogoutTest.testcases_LogoutTest()'><b>testcases_LogoutTest</b><br>Test class: general.LogoutTest<br>Parameters: Y, D&G Production MyMatrix Logout Test, D&G, , D&G MyMatrix, Y, null, 1</td>
+<td></td>
+<td>5</td>
+<td>general.LogoutTest@5c90e579</td></tr>
+<tr>
+<td title='general.ClientfileSearchTest.testcases_ClientfileSearchTest()'><b>testcases_ClientfileSearchTest</b><br>Test class: general.ClientfileSearchTest<br>Parameters: Y, Search Clientfile via PNR Locator, D&G, , , WIUEKY, , , , , , , , , , , , null, 2</td>
+<td></td>
+<td>13</td>
+<td>general.ClientfileSearchTest@c86b9e3</td></tr>
+<tr>
+<td title='production_itineraries.TourItineraryTest.testcases_TourItineraryTest()'><b>testcases_TourItineraryTest</b><br>Test class: production_itineraries.TourItineraryTest<br>Parameters: Y, Check Tour Itinerary #2, D&G, , 3, EXPEDIA.COM(EX2), PHOENIX SKY HARBO(PHX ), *(ZZZ ), 11Dec2022, null, null, 3</td>
+<td></td>
+<td>3</td>
+<td>production_itineraries.TourItineraryTest@ed7f8b4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='general.LogoutTest.testcases_LogoutTest()'><b>testcases_LogoutTest</b><br>Test class: general.LogoutTest<br>Parameters: Y, D&G Production MyMatrix Logout Test, D&G, , D&G MyMatrix, Y, null, 1</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;MyMatrix Logout&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;MyMatrix Logout&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.LoginPage.myMatrixLogout(LoginPage.java:174)
+	at general.LogoutTest.testcases_LogoutTest(LogoutTest.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1476773252", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1476773252'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;MyMatrix Logout&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;MyMatrix Logout&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.LoginPage.myMatrixLogout(LoginPage.java:174)
+	at general.LogoutTest.testcases_LogoutTest(LogoutTest.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>1</td>
+<td>general.LogoutTest@5c90e579</td></tr>
+<tr>
+<td title='general.ClientfileSearchTest.testcases_ClientfileSearchTest()'><b>testcases_ClientfileSearchTest</b><br>Test class: general.ClientfileSearchTest<br>Parameters: Y, Search Clientfile via Client File Code, D&G, , , , , , , , , , , , , 2KD, , null, 8</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;View -&gt; Clientfile Information&apos; Drop-Down Option&quot; was clicked] but found [The WebElement &quot;&apos;View -&gt; Clientfile Information&apos; Drop-Down Option&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.HomePage.goToClientfileInformationPage(HomePage.java:27)
+	at general.ClientfileSearchTest.testcases_ClientfileSearchTest(ClientfileSearchTest.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1823465063", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1823465063'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;View -&gt; Clientfile Information&apos; Drop-Down Option&quot; was clicked] but found [The WebElement &quot;&apos;View -&gt; Clientfile Information&apos; Drop-Down Option&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.HomePage.goToClientfileInformationPage(HomePage.java:27)
+	at general.ClientfileSearchTest.testcases_ClientfileSearchTest(ClientfileSearchTest.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>1</td>
+<td>general.ClientfileSearchTest@c86b9e3</td></tr>
+</table><p>
+</body>
+</html>

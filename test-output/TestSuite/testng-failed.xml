@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="analyzer.MyTransformer"/>
+    <listener class-name="utilityClasses.Listeners"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="DG MyMatrix Production Promotion Testsuite(failed)">
+    <parameter name="website" value="https://accessmatrix.mycwt.com/ListUsers.aspx"/>
+    <parameter name="password" value="Welcome2cwt2026!"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="dataTable" value="production\DG_Prod_DataTable.xlsx"/>
+    <parameter name="userid" value="U501sxv"/>
+    <classes>
+      <class name="queues.RMITest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="testcases_RMITest" invocation-numbers="3"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- queues.RMITest -->
+      <class name="production_accounting.BSPTicketTest">
+        <methods>
+          <include name="testcases_BSPTicketTest" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- production_accounting.BSPTicketTest -->
+    </classes>
+  </test> <!-- DG MyMatrix Production Promotion Testsuite(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
