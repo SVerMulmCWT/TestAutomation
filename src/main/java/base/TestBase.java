@@ -124,11 +124,12 @@ public class TestBase {
 		try {
 			//Initialize an object for the 'Constant Variables' class to access its values
 			constantVariables = new ConstantVariables();
-			
+			System.out.println("ASDF - 1");
 			//Initialize an object for the 'Properties' file to access its values
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(constantVariables.propertiesFileLocation);
 			prop.load(ip);
+			System.out.println("ASDF - 2");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
