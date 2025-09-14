@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>AU MyMatrix Production Promotion Testsuite</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>36/6/23</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 10 20:13:10 CDT 2025</td>
+<td>Started on:</td><td>Sat Sep 13 18:05:00 CDT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>158 seconds (158806 ms)</td>
+<tr><td>Total time:</td><td>983 seconds (983520 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,285 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='production_itineraries.TourItineraryTest.testcases_TourItineraryTest()'><b>testcases_TourItineraryTest</b><br>Test class: production_itineraries.TourItineraryTest<br>Parameters: Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK SUVARNABH(BKK), 09May2015, TOUR, , 1</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1314854237", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1314854237'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>20</td>
+<td>production_itineraries.TourItineraryTest@38102d01</td></tr>
+<tr>
+<td title='general.ClientfileSearchTest.testcases_ClientfileSearchTest()'><b>testcases_ClientfileSearchTest</b><br>Test class: general.ClientfileSearchTest<br>Parameters: Y, Search Clientfile via Departure Date & Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, A13970, , , , , , , 4</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Search&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Search&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfileInformationPage.searchClientfile(ClientfileInformationPage.java:105)
+	at general.ClientfileSearchTest.testcases_ClientfileSearchTest(ClientfileSearchTest.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1413111123", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1413111123'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Search&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Search&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfileInformationPage.searchClientfile(ClientfileInformationPage.java:105)
+	at general.ClientfileSearchTest.testcases_ClientfileSearchTest(ClientfileSearchTest.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>16</td>
+<td>general.ClientfileSearchTest@3af9c5b7</td></tr>
+<tr>
+<td title='production_itineraries.TourItineraryTest.testcases_TourItineraryTest()'><b>testcases_TourItineraryTest</b><br>Test class: production_itineraries.TourItineraryTest<br>Parameters: Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, TOUR, , 2</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace356795837", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace356795837'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>6</td>
+<td>production_itineraries.TourItineraryTest@38102d01</td></tr>
+<tr>
+<td title='production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest()'><b>testcases_InsuranceItineraryTest</b><br>Test class: production_itineraries.InsuranceItineraryTest<br>Parameters: Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08Aug2015, , 1</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace431271837", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace431271837'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>20</td>
+<td>production_itineraries.InsuranceItineraryTest@6ab778a</td></tr>
+<tr>
+<td title='production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest()'><b>testcases_InsuranceItineraryTest</b><br>Test class: production_itineraries.InsuranceItineraryTest<br>Parameters: Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRANKFURT INTERNATIONAL APT(FRA), , 16Sep2015, , 2</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace565930679", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace565930679'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>6</td>
+<td>production_itineraries.InsuranceItineraryTest@6ab778a</td></tr>
+<tr>
+<td title='production_itineraries.TourItineraryTest.testcases_TourItineraryTest()'><b>testcases_TourItineraryTest</b><br>Test class: production_itineraries.TourItineraryTest<br>Parameters: Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, TOUR, , 3</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1258171009", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1258171009'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>6</td>
+<td>production_itineraries.TourItineraryTest@38102d01</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,45 +355,1213 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='queues.RMITest.testcases_RMITest()'><b>testcases_RMITest</b><br>Test class: queues.RMITest<br>Parameters: Y, RMI Search Test, AU, RMI, Search, , 1</td>
+<td title='general.ClientfileSearchTest.testcases_ClientfileSearchTest()'><b>testcases_ClientfileSearchTest</b><br>Test class: general.ClientfileSearchTest<br>Parameters: Y, Search Clientfile via PNR Locator, AU, , , IUFQVP, , , , , , , , , , , , , 2</td>
+<td></td>
+<td>19</td>
+<td>general.ClientfileSearchTest@3af9c5b7</td></tr>
+<tr>
+<td title='queues.RMITest.testcases_RMITest()'><b>testcases_RMITest</b><br>Test class: queues.RMITest<br>Parameters: Y, RMI Queue Count Test, AU, RMI, Queue Count, , 2</td>
+<td></td>
+<td>17</td>
+<td>queues.RMITest@6f45df59</td></tr>
+<tr>
+<td title='queues.RMITest.testcases_RMITest()'><b>testcases_RMITest</b><br>Test class: queues.RMITest<br>Parameters: Y, RMA Search Test, AU, RMA, Search, , 3</td>
+<td></td>
+<td>17</td>
+<td>queues.RMITest@6f45df59</td></tr>
+<tr>
+<td title='general.LoginTest.testcases_LoginTest()'><b>testcases_LoginTest</b><br>Test class: general.LoginTest<br>Parameters: Y, AU Production IRDB Login Test, AU, , AU IRDB, Y, , 1</td>
+<td></td>
+<td>44</td>
+<td>general.LoginTest@5c671d7f</td></tr>
+<tr>
+<td title='production_itineraries.HotelItineraryTest.testcases_HotelItineraryTest()'><b>testcases_HotelItineraryTest</b><br>Test class: production_itineraries.HotelItineraryTest<br>Parameters: Y, Check Hotel Itinerary #2, AU, , 2, INTERNATIONAL HOTELS(ZZH), COUNTRY APARTMENTS, DUBBO(DBO), 230 BRISBANE STREET DUBBO 2830, 61268851141, AP1 - 1 BEDROOM APARTMENT, 10Feb2023, , 2</td>
+<td></td>
+<td>5</td>
+<td>production_itineraries.HotelItineraryTest@ed7f8b4</td></tr>
+<tr>
+<td title='production_itineraries.RailItineraryTest.testcases_RailItineraryTest()'><b>testcases_RailItineraryTest</b><br>Test class: production_itineraries.RailItineraryTest<br>Parameters: Y, Check Rail Itinerary #2, AU, , 2, OTHER RAIL(XXR), 1818, GENEVA RAIL(8501118), ZURICH RAIL(8503000), 27Oct2025, C, , 2</td>
+<td></td>
+<td>4</td>
+<td>production_itineraries.RailItineraryTest@77f80c04</td></tr>
+<tr>
+<td title='production_accounting.BSPTicketTest.testcases_BSPTicketTest()'><b>testcases_BSPTicketTest</b><br>Test class: production_accounting.BSPTicketTest<br>Parameters: Y, Check BSP Ticket #1, AU, M7I86122C, BSP Tickets, 217, THAI AIRWAYS INTL, 2046685577, , 1</td>
+<td></td>
+<td>17</td>
+<td>production_accounting.BSPTicketTest@5c90e579</td></tr>
+<tr>
+<td title='production_itineraries.CarItineraryTest.testcases_CarItineraryTest()'><b>testcases_CarItineraryTest</b><br>Test class: production_itineraries.CarItineraryTest<br>Parameters: Y, Check Car Itinerary #2, AU, , 2, AVIS(ZIC), IFAR - INTER 4WD AUTO A/C, MELBOURNE(MEL), 09Oct2023, , 2</td>
+<td></td>
+<td>5</td>
+<td>production_itineraries.CarItineraryTest@4c309d4d</td></tr>
+<tr>
+<td title='general.ClientfileSearchTest.testcases_ClientfileSearchTest()'><b>testcases_ClientfileSearchTest</b><br>Test class: general.ClientfileSearchTest<br>Parameters: Y, Search Clientfile via Client File Number, AU, , , , , , AHW0587920C, AHW0587920C, , , , , , , , , 3</td>
+<td></td>
+<td>18</td>
+<td>general.ClientfileSearchTest@3af9c5b7</td></tr>
+<tr>
+<td title='production_itineraries.RailItineraryTest.testcases_RailItineraryTest()'><b>testcases_RailItineraryTest</b><br>Test class: production_itineraries.RailItineraryTest<br>Parameters: Y, Check Rail Itinerary #1, AU, 7LZ56C, 1, OTHER RAIL(XXR), 518, GENEVA RAIL(8501118), ZURICH RAIL(8503000), 27Oct2025, C, , 1</td>
+<td></td>
+<td>20</td>
+<td>production_itineraries.RailItineraryTest@77f80c04</td></tr>
+<tr>
+<td title='production_accounting.NonBSPTicketTest.testcases_NonBSPTicketTest()'><b>testcases_NonBSPTicketTest</b><br>Test class: production_accounting.NonBSPTicketTest<br>Parameters: Y, Check Non-BSP Ticket #2, AU, , Non BSP Document, ASF, AIRLINE SURCHARGE FEE, 8, , 2</td>
+<td></td>
+<td>5</td>
+<td>production_accounting.NonBSPTicketTest@58ea606c</td></tr>
+<tr>
+<td title='general.ClientfileSearchTest.testcases_ClientfileSearchTest()'><b>testcases_ClientfileSearchTest</b><br>Test class: general.ClientfileSearchTest<br>Parameters: Y, Search Clientfile via Document, AU, , , , , , , , , , Ticket, 2757809733, , , , , 6</td>
+<td></td>
+<td>23</td>
+<td>general.ClientfileSearchTest@3af9c5b7</td></tr>
+<tr>
+<td title='production_itineraries.ShipItineraryTest.testcases_ShipItineraryTest()'><b>testcases_ShipItineraryTest</b><br>Test class: production_itineraries.ShipItineraryTest<br>Parameters: Y, Check Ship Itinerary #3, AU, , 3, SEALINK(SE2), ADELAIDE(ADL), PENNESHAW(PEA), 28Jul2016, SEA , , 3</td>
+<td></td>
+<td>6</td>
+<td>production_itineraries.ShipItineraryTest@37883b97</td></tr>
+<tr>
+<td title='production_accounting.NonBSPTicketTest.testcases_NonBSPTicketTest()'><b>testcases_NonBSPTicketTest</b><br>Test class: production_accounting.NonBSPTicketTest<br>Parameters: Y, Check Non-BSP Ticket #1, AU, M8V0091506C, Non BSP Document, DOB, DOM OBT FEE, 1, , 1</td>
+<td></td>
+<td>22</td>
+<td>production_accounting.NonBSPTicketTest@58ea606c</td></tr>
+<tr>
+<td title='production_itineraries.AirItineraryTest.testcases_AirItineraryTest()'><b>testcases_AirItineraryTest</b><br>Test class: production_itineraries.AirItineraryTest<br>Parameters: Y, Check Air Itinerary #1, AU, GYV0258096C, 1, QANTAS AIRWAYS(QF ), 733, V, SYDNEY(SYD), ADELAIDE(ADL), 25Mar2024, , 1</td>
+<td></td>
+<td>21</td>
+<td>production_itineraries.AirItineraryTest@37271612</td></tr>
+<tr>
+<td title='general.ClientfileSearchTest.testcases_ClientfileSearchTest()'><b>testcases_ClientfileSearchTest</b><br>Test class: general.ClientfileSearchTest<br>Parameters: Y, Search Clientfile via Client File Code, AU, , , , , , , , , , , , , 11F, , , 7</td>
 <td></td>
 <td>16</td>
-<td>queues.RMITest@385e9564</td></tr>
+<td>general.ClientfileSearchTest@3af9c5b7</td></tr>
+<tr>
+<td title='production_itineraries.CarItineraryTest.testcases_CarItineraryTest()'><b>testcases_CarItineraryTest</b><br>Test class: production_itineraries.CarItineraryTest<br>Parameters: Y, Check Car Itinerary #1, AU, J1E94583C, 1, AVIS(ZIC), ICAR - INTERMEDIATE CAR 2-4DR, ADELAIDE(ADL), 08Oct2023, , 1</td>
+<td></td>
+<td>19</td>
+<td>production_itineraries.CarItineraryTest@4c309d4d</td></tr>
+<tr>
+<td title='production_accounting.BSPTicketTest.testcases_BSPTicketTest()'><b>testcases_BSPTicketTest</b><br>Test class: production_accounting.BSPTicketTest<br>Parameters: Y, Check BSP Ticket #2, AU, , BSP Tickets, 176, EMIRATES AIR, 2047964533, , 2</td>
+<td></td>
+<td>3</td>
+<td>production_accounting.BSPTicketTest@5c90e579</td></tr>
+<tr>
+<td title='general.ChangeBranchTest.testcases_ChangeBranchTest()'><b>testcases_ChangeBranchTest</b><br>Test class: general.ChangeBranchTest<br>Parameters: Y, Change Branch Test, AU, A11101000, A11101,, , 1</td>
+<td></td>
+<td>3</td>
+<td>general.ChangeBranchTest@10aa41f2</td></tr>
+<tr>
+<td title='production_itineraries.RailItineraryTest.testcases_RailItineraryTest()'><b>testcases_RailItineraryTest</b><br>Test class: production_itineraries.RailItineraryTest<br>Parameters: Y, Check Rail Itinerary #3, AU, , 3, OTHER RAIL(XXR), 452047, GENEVA RAIL(8501118), ZURICH RAIL(8503000), 27Oct2025, C, , 3</td>
+<td></td>
+<td>5</td>
+<td>production_itineraries.RailItineraryTest@77f80c04</td></tr>
+<tr>
+<td title='production_itineraries.ShipItineraryTest.testcases_ShipItineraryTest()'><b>testcases_ShipItineraryTest</b><br>Test class: production_itineraries.ShipItineraryTest<br>Parameters: Y, Check Ship Itinerary #2, AU, , 2, *(ZZ ), PENNESHAW(PEA), ADELAIDE(ADL), 25Jul2016, SEA , , 2</td>
+<td></td>
+<td>6</td>
+<td>production_itineraries.ShipItineraryTest@37883b97</td></tr>
+<tr>
+<td title='production_itineraries.BusItineraryTest.testcases_BusItineraryTest()'><b>testcases_BusItineraryTest</b><br>Test class: production_itineraries.BusItineraryTest<br>Parameters: Y, Check Bus Itinerary #2, AU, , 2, OTHER BUS(ZZB), 9999, PERTH(PER), PERTH(PER), 06Aug2018, , , 2</td>
+<td></td>
+<td>5</td>
+<td>production_itineraries.BusItineraryTest@1dac5ef</td></tr>
+<tr>
+<td title='production_itineraries.MiscItineraryTest.testcases_AirItineraryTest()'><b>testcases_AirItineraryTest</b><br>Test class: production_itineraries.MiscItineraryTest<br>Parameters: Y, Check Misc/Other Itinerary #2, AU, , 2, ADMIN FEE(CAF), DAKAR(DKR), DAKAR(DKR), 23Jun2012, ATX , , 2</td>
+<td></td>
+<td>4</td>
+<td>production_itineraries.MiscItineraryTest@4e3958e7</td></tr>
+<tr>
+<td title='production_itineraries.AirItineraryTest.testcases_AirItineraryTest()'><b>testcases_AirItineraryTest</b><br>Test class: production_itineraries.AirItineraryTest<br>Parameters: Y, Check Air Itinerary #2, AU, , 2, QANTAS AIRWAYS(QF ), 744, L, ADELAIDE(ADL), SYDNEY(SYD), 27Mar2024, , 2</td>
+<td></td>
+<td>4</td>
+<td>production_itineraries.AirItineraryTest@37271612</td></tr>
+<tr>
+<td title='production_itineraries.HotelItineraryTest.testcases_HotelItineraryTest()'><b>testcases_HotelItineraryTest</b><br>Test class: production_itineraries.HotelItineraryTest<br>Parameters: Y, Check Hotel Itinerary #1, AU, 11F0042664C, 1, INTERNATIONAL HOTELS(ZZH), COUNTRY APARTMENTS, DUBBO(DBO), 230 BRISBANE STREET, DUBBO NSW 2830, 61268851141, AP2 - 2 BEDROOM APARTMENT, 06Feb2023, , 1</td>
+<td></td>
+<td>22</td>
+<td>production_itineraries.HotelItineraryTest@ed7f8b4</td></tr>
+<tr>
+<td title='production_itineraries.BusItineraryTest.testcases_BusItineraryTest()'><b>testcases_BusItineraryTest</b><br>Test class: production_itineraries.BusItineraryTest<br>Parameters: Y, Check Bus Itinerary #1, AU, G4S346C, 1, OTHER BUS(ZZB), 9999, BUNBURY(BUY), BUNBURY(BUY), 26Jun2018, , , 1</td>
+<td></td>
+<td>20</td>
+<td>production_itineraries.BusItineraryTest@1dac5ef</td></tr>
+<tr>
+<td title='production_itineraries.MiscItineraryTest.testcases_AirItineraryTest()'><b>testcases_AirItineraryTest</b><br>Test class: production_itineraries.MiscItineraryTest<br>Parameters: Y, Check Misc/Other Itinerary #1, AU, GFP17479C, 1, ADMINISTRATION FEE(CMF), DAKAR(DKR), DAKAR(DKR), 23Jun2012, ATX , , 1</td>
+<td></td>
+<td>21</td>
+<td>production_itineraries.MiscItineraryTest@4e3958e7</td></tr>
 <tr>
 <td title='queues.RMITest.testcases_RMITest()'><b>testcases_RMITest</b><br>Test class: queues.RMITest<br>Parameters: Y, RMA Queue Count Test, AU, RMA, Queue Count, , 4</td>
 <td></td>
-<td>15</td>
-<td>queues.RMITest@385e9564</td></tr>
+<td>17</td>
+<td>queues.RMITest@6f45df59</td></tr>
+<tr>
+<td title='general.ClientfileSearchTest.testcases_ClientfileSearchTest()'><b>testcases_ClientfileSearchTest</b><br>Test class: general.ClientfileSearchTest<br>Parameters: Y, Search Clientfile via Full Name, AU, JOHNSON, TIM, , , , , , , , , , , , , , 1</td>
+<td></td>
+<td>30</td>
+<td>general.ClientfileSearchTest@3af9c5b7</td></tr>
+<tr>
+<td title='production_itineraries.HotelItineraryTest.testcases_HotelItineraryTest()'><b>testcases_HotelItineraryTest</b><br>Test class: production_itineraries.HotelItineraryTest<br>Parameters: Y, Check Hotel Itinerary #3, AU, , 3, INTERNATIONAL HOTELS(ZZH), COUNTRY APARTMENTS, BRISBANE(BNE), 230 BRISBANE STREET DUBBO NSW, 61268851141, AP1 - 1 BEDROOM APARTMENT, 13Feb2023, , 3</td>
+<td></td>
+<td>6</td>
+<td>production_itineraries.HotelItineraryTest@ed7f8b4</td></tr>
+<tr>
+<td title='general.ClientfileSearchTest.testcases_ClientfileSearchTest()'><b>testcases_ClientfileSearchTest</b><br>Test class: general.ClientfileSearchTest<br>Parameters: Y, Search Clientfile via Booking Branch & Client File Code, AU, , , , , , , , 3970, A13970, , , , W44, , , 5</td>
+<td></td>
+<td>16</td>
+<td>general.ClientfileSearchTest@3af9c5b7</td></tr>
+<tr>
+<td title='queues.RMITest.testcases_RMITest()'><b>testcases_RMITest</b><br>Test class: queues.RMITest<br>Parameters: Y, RMI Search Test, AU, RMI, Search, , 1</td>
+<td></td>
+<td>18</td>
+<td>queues.RMITest@6f45df59</td></tr>
+<tr>
+<td title='production_itineraries.ShipItineraryTest.testcases_ShipItineraryTest()'><b>testcases_ShipItineraryTest</b><br>Test class: production_itineraries.ShipItineraryTest<br>Parameters: Y, Check Ship Itinerary #4, AU, , 4, SEALINK(SE2), ADELAIDE(ADL), PENNESHAW(PEA), 28Jul2016, SEA , , 4</td>
+<td></td>
+<td>7</td>
+<td>production_itineraries.ShipItineraryTest@37883b97</td></tr>
+<tr>
+<td title='production_itineraries.ShipItineraryTest.testcases_ShipItineraryTest()'><b>testcases_ShipItineraryTest</b><br>Test class: production_itineraries.ShipItineraryTest<br>Parameters: Y, Check Ship Itinerary #1, AU, ADS0439790C, 1, *(ZZ ), PENNESHAW(PEA), ADELAIDE(ADL), 25Jul2016, SEA , , 1</td>
+<td></td>
+<td>23</td>
+<td>production_itineraries.ShipItineraryTest@37883b97</td></tr>
 <tr>
 <td title='general.LoginTest.testcases_LoginTest()'><b>testcases_LoginTest</b><br>Test class: general.LoginTest<br>Parameters: Y, AU Production MyMatrix Login Test, AU, , AU MyMatrix, n, , 2</td>
 <td></td>
 <td>32</td>
-<td>general.LoginTest@75db5df9</td></tr>
-<tr>
-<td title='general.LoginTest.testcases_LoginTest()'><b>testcases_LoginTest</b><br>Test class: general.LoginTest<br>Parameters: Y, AU Production IRDB Login Test, AU, , AU IRDB, Y, , 1</td>
-<td></td>
-<td>41</td>
-<td>general.LoginTest@75db5df9</td></tr>
-<tr>
-<td title='queues.RMITest.testcases_RMITest()'><b>testcases_RMITest</b><br>Test class: queues.RMITest<br>Parameters: Y, RMI Queue Count Test, AU, RMI, Queue Count, , 2</td>
-<td></td>
-<td>15</td>
-<td>queues.RMITest@385e9564</td></tr>
-<tr>
-<td title='general.ChangeBranchTest.testcases_ChangeBranchTest()'><b>testcases_ChangeBranchTest</b><br>Test class: general.ChangeBranchTest<br>Parameters: Y, Change Branch Test, AU, A11101000, A11101,, , 1</td>
-<td></td>
-<td>1</td>
-<td>general.ChangeBranchTest@291caca8</td></tr>
-<tr>
-<td title='queues.RMITest.testcases_RMITest()'><b>testcases_RMITest</b><br>Test class: queues.RMITest<br>Parameters: Y, RMA Search Test, AU, RMA, Search, , 3</td>
-<td></td>
-<td>15</td>
-<td>queues.RMITest@385e9564</td></tr>
+<td>general.LoginTest@5c671d7f</td></tr>
 <tr>
 <td title='general.LogoutTest.testcases_LogoutTest()'><b>testcases_LogoutTest</b><br>Test class: general.LogoutTest<br>Parameters: Y, AU Production MyMatrix Logout Test, AU, , AU MyMatrix, Y, , 1</td>
 <td></td>
-<td>3</td>
-<td>general.LogoutTest@5b94b04d</td></tr>
+<td>6</td>
+<td>general.LogoutTest@38e79ae3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='production_itineraries.TourItineraryTest.testcases_TourItineraryTest()'><b>testcases_TourItineraryTest</b><br>Test class: production_itineraries.TourItineraryTest<br>Parameters: Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, TOUR, , 2</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1972414321", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1972414321'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>6</td>
+<td>production_itineraries.TourItineraryTest@38102d01</td></tr>
+<tr>
+<td title='production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest()'><b>testcases_InsuranceItineraryTest</b><br>Test class: production_itineraries.InsuranceItineraryTest<br>Parameters: Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRANKFURT INTERNATIONAL APT(FRA), , 16Sep2015, , 2</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace985592797", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace985592797'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>6</td>
+<td>production_itineraries.InsuranceItineraryTest@6ab778a</td></tr>
+<tr>
+<td title='production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest()'><b>testcases_InsuranceItineraryTest</b><br>Test class: production_itineraries.InsuranceItineraryTest<br>Parameters: Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08Aug2015, , 1</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1789711593", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1789711593'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>20</td>
+<td>production_itineraries.InsuranceItineraryTest@6ab778a</td></tr>
+<tr>
+<td title='general.ClientfileSearchTest.testcases_ClientfileSearchTest()'><b>testcases_ClientfileSearchTest</b><br>Test class: general.ClientfileSearchTest<br>Parameters: Y, Search Clientfile via Departure Date & Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, A13970, , , , , , , 4</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Search&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Search&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfileInformationPage.searchClientfile(ClientfileInformationPage.java:105)
+	at general.ClientfileSearchTest.testcases_ClientfileSearchTest(ClientfileSearchTest.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1370664468", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1370664468'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Search&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Search&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfileInformationPage.searchClientfile(ClientfileInformationPage.java:105)
+	at general.ClientfileSearchTest.testcases_ClientfileSearchTest(ClientfileSearchTest.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>17</td>
+<td>general.ClientfileSearchTest@3af9c5b7</td></tr>
+<tr>
+<td title='general.ClientfileSearchTest.testcases_ClientfileSearchTest()'><b>testcases_ClientfileSearchTest</b><br>Test class: general.ClientfileSearchTest<br>Parameters: Y, Search Clientfile via Departure Date & Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, A13970, , , , , , , 4</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [19Aug2025] but found [08Feb2025],
+	expected [A13970] but found [A14920]
+	at general.ClientfileSearchTest.testcases_ClientfileSearchTest(ClientfileSearchTest.java:172)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1656293055", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1656293055'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [19Aug2025] but found [08Feb2025],
+	expected [A13970] but found [A14920]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at general.ClientfileSearchTest.testcases_ClientfileSearchTest(ClientfileSearchTest.java:172)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>20</td>
+<td>general.ClientfileSearchTest@3af9c5b7</td></tr>
+<tr>
+<td title='production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest()'><b>testcases_InsuranceItineraryTest</b><br>Test class: production_itineraries.InsuranceItineraryTest<br>Parameters: Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08Aug2015, , 1</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1630185091", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1630185091'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>21</td>
+<td>production_itineraries.InsuranceItineraryTest@6ab778a</td></tr>
+<tr>
+<td title='production_itineraries.TourItineraryTest.testcases_TourItineraryTest()'><b>testcases_TourItineraryTest</b><br>Test class: production_itineraries.TourItineraryTest<br>Parameters: Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, TOUR, , 3</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2039144928", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2039144928'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>6</td>
+<td>production_itineraries.TourItineraryTest@38102d01</td></tr>
+<tr>
+<td title='production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest()'><b>testcases_InsuranceItineraryTest</b><br>Test class: production_itineraries.InsuranceItineraryTest<br>Parameters: Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRANKFURT INTERNATIONAL APT(FRA), , 16Sep2015, , 2</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace816135087", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace816135087'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>6</td>
+<td>production_itineraries.InsuranceItineraryTest@6ab778a</td></tr>
+<tr>
+<td title='production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest()'><b>testcases_InsuranceItineraryTest</b><br>Test class: production_itineraries.InsuranceItineraryTest<br>Parameters: Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08Aug2015, , 1</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace420027300", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace420027300'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>19</td>
+<td>production_itineraries.InsuranceItineraryTest@6ab778a</td></tr>
+<tr>
+<td title='general.ClientfileSearchTest.testcases_ClientfileSearchTest()'><b>testcases_ClientfileSearchTest</b><br>Test class: general.ClientfileSearchTest<br>Parameters: Y, Search Clientfile via Client File Code, AU, , , , , , , , , , , , , 11F, , , 7</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;View&apos; Menu Listing Drop-Down&quot; was clicked] but found [The WebElement &quot;&apos;View&apos; Menu Listing Drop-Down&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.HomePage.goToClientfileInformationPage(HomePage.java:24)
+	at general.ClientfileSearchTest.testcases_ClientfileSearchTest(ClientfileSearchTest.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace49119907", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace49119907'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;View&apos; Menu Listing Drop-Down&quot; was clicked] but found [The WebElement &quot;&apos;View&apos; Menu Listing Drop-Down&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.HomePage.goToClientfileInformationPage(HomePage.java:24)
+	at general.ClientfileSearchTest.testcases_ClientfileSearchTest(ClientfileSearchTest.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>2</td>
+<td>general.ClientfileSearchTest@3af9c5b7</td></tr>
+<tr>
+<td title='general.LoginTest.testcases_LoginTest()'><b>testcases_LoginTest</b><br>Test class: general.LoginTest<br>Parameters: Y, AU Production MyMatrix Login Test, AU, , AU MyMatrix, n, , 2</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [The user successfully logged in] but found [The user failed  to log in]
+	at general.LoginTest.testcases_LoginTest(LoginTest.java:94)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace668978033", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace668978033'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [The user successfully logged in] but found [The user failed  to log in]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at general.LoginTest.testcases_LoginTest(LoginTest.java:94)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>43</td>
+<td>general.LoginTest@5c671d7f</td></tr>
+<tr>
+<td title='production_itineraries.TourItineraryTest.testcases_TourItineraryTest()'><b>testcases_TourItineraryTest</b><br>Test class: production_itineraries.TourItineraryTest<br>Parameters: Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, TOUR, , 2</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1941561526", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1941561526'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>6</td>
+<td>production_itineraries.TourItineraryTest@38102d01</td></tr>
+<tr>
+<td title='production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest()'><b>testcases_InsuranceItineraryTest</b><br>Test class: production_itineraries.InsuranceItineraryTest<br>Parameters: Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRANKFURT INTERNATIONAL APT(FRA), , 16Sep2015, , 2</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1409609684", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1409609684'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>6</td>
+<td>production_itineraries.InsuranceItineraryTest@6ab778a</td></tr>
+<tr>
+<td title='production_itineraries.TourItineraryTest.testcases_TourItineraryTest()'><b>testcases_TourItineraryTest</b><br>Test class: production_itineraries.TourItineraryTest<br>Parameters: Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, TOUR, , 3</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2098311104", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2098311104'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>6</td>
+<td>production_itineraries.TourItineraryTest@38102d01</td></tr>
+<tr>
+<td title='general.LoginTest.testcases_LoginTest()'><b>testcases_LoginTest</b><br>Test class: general.LoginTest<br>Parameters: Y, AU Production IRDB Login Test, AU, , AU IRDB, Y, , 1</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Region&apos; Drop-Down&quot; was clicked] but found [The WebElement &quot;&apos;Region&apos; Drop-Down&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.LoginPage.selectRegion(LoginPage.java:41)
+	at general.LoginTest.testcases_LoginTest(LoginTest.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace564339735", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace564339735'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Region&apos; Drop-Down&quot; was clicked] but found [The WebElement &quot;&apos;Region&apos; Drop-Down&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.LoginPage.selectRegion(LoginPage.java:41)
+	at general.LoginTest.testcases_LoginTest(LoginTest.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>28</td>
+<td>general.LoginTest@5c671d7f</td></tr>
+<tr>
+<td title='production_itineraries.TourItineraryTest.testcases_TourItineraryTest()'><b>testcases_TourItineraryTest</b><br>Test class: production_itineraries.TourItineraryTest<br>Parameters: Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK SUVARNABH(BKK), 09May2015, TOUR, , 1</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace345599309", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace345599309'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>20</td>
+<td>production_itineraries.TourItineraryTest@38102d01</td></tr>
+<tr>
+<td title='general.ClientfileSearchTest.testcases_ClientfileSearchTest()'><b>testcases_ClientfileSearchTest</b><br>Test class: general.ClientfileSearchTest<br>Parameters: Y, Search Clientfile via Full Name, AU, JOHNSON, TIM, , , , , , , , , , , , , , 1</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Search&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Search&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfileInformationPage.searchClientfile(ClientfileInformationPage.java:105)
+	at general.ClientfileSearchTest.testcases_ClientfileSearchTest(ClientfileSearchTest.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace436541616", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace436541616'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Search&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Search&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfileInformationPage.searchClientfile(ClientfileInformationPage.java:105)
+	at general.ClientfileSearchTest.testcases_ClientfileSearchTest(ClientfileSearchTest.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>17</td>
+<td>general.ClientfileSearchTest@3af9c5b7</td></tr>
+<tr>
+<td title='production_itineraries.TourItineraryTest.testcases_TourItineraryTest()'><b>testcases_TourItineraryTest</b><br>Test class: production_itineraries.TourItineraryTest<br>Parameters: Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK SUVARNABH(BKK), 09May2015, TOUR, , 1</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace204157501", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace204157501'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>20</td>
+<td>production_itineraries.TourItineraryTest@38102d01</td></tr>
+<tr>
+<td title='production_itineraries.TourItineraryTest.testcases_TourItineraryTest()'><b>testcases_TourItineraryTest</b><br>Test class: production_itineraries.TourItineraryTest<br>Parameters: Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, TOUR, , 2</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1537483678", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1537483678'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>6</td>
+<td>production_itineraries.TourItineraryTest@38102d01</td></tr>
+<tr>
+<td title='general.ClientfileSearchTest.testcases_ClientfileSearchTest()'><b>testcases_ClientfileSearchTest</b><br>Test class: general.ClientfileSearchTest<br>Parameters: Y, Search Clientfile via Departure Date & Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, A13970, , , , , , , 4</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Search&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Search&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfileInformationPage.searchClientfile(ClientfileInformationPage.java:105)
+	at general.ClientfileSearchTest.testcases_ClientfileSearchTest(ClientfileSearchTest.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1316268712", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1316268712'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Search&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Search&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfileInformationPage.searchClientfile(ClientfileInformationPage.java:105)
+	at general.ClientfileSearchTest.testcases_ClientfileSearchTest(ClientfileSearchTest.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>17</td>
+<td>general.ClientfileSearchTest@3af9c5b7</td></tr>
+<tr>
+<td title='production_itineraries.TourItineraryTest.testcases_TourItineraryTest()'><b>testcases_TourItineraryTest</b><br>Test class: production_itineraries.TourItineraryTest<br>Parameters: Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, TOUR, , 3</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace426218043", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace426218043'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>6</td>
+<td>production_itineraries.TourItineraryTest@38102d01</td></tr>
+<tr>
+<td title='production_itineraries.TourItineraryTest.testcases_TourItineraryTest()'><b>testcases_TourItineraryTest</b><br>Test class: production_itineraries.TourItineraryTest<br>Parameters: Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK SUVARNABH(BKK), 09May2015, TOUR, , 1</td>
+<td><div><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1005811789", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1005811789'><pre>java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>20</td>
+<td>production_itineraries.TourItineraryTest@38102d01</td></tr>
+<tr>
+<td title='production_accounting.BSPTicketTest.testcases_BSPTicketTest()'><b>testcases_BSPTicketTest</b><br>Test class: production_accounting.BSPTicketTest<br>Parameters: Y, Check BSP Ticket #2, AU, , BSP Tickets, 176, EMIRATES AIR, 2047964533, , 2</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Document Type &apos;BSP Tickets&apos; with Document Number &apos;2047964533&apos;] but found [Did not locate the Document Type &apos;BSP Tickets&apos; with Document Number &apos;2047964533&apos;]
+	at production_accounting.BSPTicketTest.testcases_BSPTicketTest(BSPTicketTest.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1959700721", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1959700721'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Document Type &apos;BSP Tickets&apos; with Document Number &apos;2047964533&apos;] but found [Did not locate the Document Type &apos;BSP Tickets&apos; with Document Number &apos;2047964533&apos;]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at production_accounting.BSPTicketTest.testcases_BSPTicketTest(BSPTicketTest.java:122)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>2</td>
+<td>production_accounting.BSPTicketTest@5c90e579</td></tr>
 </table><p>
 </body>
 </html>

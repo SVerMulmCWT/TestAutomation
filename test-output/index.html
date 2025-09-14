@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-TestSuite" class="navigator-link">
-              <span class="suite-name border-passed">TestSuite</span>
+              <span class="suite-name border-failed">TestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,170 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">65 methods, 6 failed,  23 skipped,  36 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestSuite" class="hide-methods failed suite-TestSuite"> (hide)</a> <!-- hide-methods failed suite-TestSuite -->
+                      <a href="#" panel-name="suite-TestSuite" class="show-methods failed suite-TestSuite"> (show)</a> <!-- show-methods failed suite-TestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-TestSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="general.ClientfileSearchTest" class="method navigator-link" hash-for-method="testcases_ClientfileSearchTest(Y, Search Clientfile via Departure Date &amp; Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, ...)">testcases_ClientfileSearchTest(Y, Search Clientfile via Departure Date & Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.InsuranceItineraryTest" class="method navigator-link" hash-for-method="testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08...)">testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.InsuranceItineraryTest" class="method navigator-link" hash-for-method="testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRAN...)">testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRAN...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.TourItineraryTest" class="method navigator-link" hash-for-method="testcases_TourItineraryTest(Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK...)">testcases_TourItineraryTest(Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.TourItineraryTest" class="method navigator-link" hash-for-method="testcases_TourItineraryTest(Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, ...)">testcases_TourItineraryTest(Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.TourItineraryTest" class="method navigator-link" hash-for-method="testcases_TourItineraryTest(Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, T...)">testcases_TourItineraryTest(Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, T...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-TestSuite" class="hide-methods skipped suite-TestSuite"> (hide)</a> <!-- hide-methods skipped suite-TestSuite -->
+                      <a href="#" panel-name="suite-TestSuite" class="show-methods skipped suite-TestSuite"> (show)</a> <!-- show-methods skipped suite-TestSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-TestSuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_accounting.BSPTicketTest" class="method navigator-link" hash-for-method="testcases_BSPTicketTest(Y, Check BSP Ticket #2, AU, , BSP Tickets, 176, EMIRATES AIR, 2047964533, , 2)">testcases_BSPTicketTest(Y, Check BSP Ticket #2, AU, , BSP Tickets, 176, EMIRATES AIR, 2047964533, , 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="general.ClientfileSearchTest" class="method navigator-link" hash-for-method="testcases_ClientfileSearchTest(Y, Search Clientfile via Departure Date &amp; Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, ...)">testcases_ClientfileSearchTest(Y, Search Clientfile via Departure Date & Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="general.ClientfileSearchTest" class="method navigator-link" hash-for-method="testcases_ClientfileSearchTest(Y, Search Clientfile via Departure Date &amp; Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, ...)">testcases_ClientfileSearchTest(Y, Search Clientfile via Departure Date & Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="general.ClientfileSearchTest" class="method navigator-link" hash-for-method="testcases_ClientfileSearchTest(Y, Search Clientfile via Client File Code, AU, , , , , , , , , , , , , 11F, , , 7)">testcases_ClientfileSearchTest(Y, Search Clientfile via Client File Code, AU, , , , , , , , , , , , , 11F, , , 7)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="general.ClientfileSearchTest" class="method navigator-link" hash-for-method="testcases_ClientfileSearchTest(Y, Search Clientfile via Full Name, AU, JOHNSON, TIM, , , , , , , , , , , , , , 1)">testcases_ClientfileSearchTest(Y, Search Clientfile via Full Name, AU, JOHNSON, TIM, , , , , , , , , , , , , , 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="general.ClientfileSearchTest" class="method navigator-link" hash-for-method="testcases_ClientfileSearchTest(Y, Search Clientfile via Departure Date &amp; Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, ...)">testcases_ClientfileSearchTest(Y, Search Clientfile via Departure Date & Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.InsuranceItineraryTest" class="method navigator-link" hash-for-method="testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRAN...)">testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRAN...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.InsuranceItineraryTest" class="method navigator-link" hash-for-method="testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08...)">testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.InsuranceItineraryTest" class="method navigator-link" hash-for-method="testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08...)">testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.InsuranceItineraryTest" class="method navigator-link" hash-for-method="testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRAN...)">testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRAN...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.InsuranceItineraryTest" class="method navigator-link" hash-for-method="testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08...)">testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.InsuranceItineraryTest" class="method navigator-link" hash-for-method="testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRAN...)">testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRAN...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="general.LoginTest" class="method navigator-link" hash-for-method="testcases_LoginTest(Y, AU Production MyMatrix Login Test, AU, , AU MyMatrix, n, , 2)">testcases_LoginTest(Y, AU Production MyMatrix Login Test, AU, , AU MyMatrix, n, , 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="general.LoginTest" class="method navigator-link" hash-for-method="testcases_LoginTest(Y, AU Production IRDB Login Test, AU, , AU IRDB, Y, , 1)">testcases_LoginTest(Y, AU Production IRDB Login Test, AU, , AU IRDB, Y, , 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.TourItineraryTest" class="method navigator-link" hash-for-method="testcases_TourItineraryTest(Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, ...)">testcases_TourItineraryTest(Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.TourItineraryTest" class="method navigator-link" hash-for-method="testcases_TourItineraryTest(Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, T...)">testcases_TourItineraryTest(Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, T...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.TourItineraryTest" class="method navigator-link" hash-for-method="testcases_TourItineraryTest(Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, ...)">testcases_TourItineraryTest(Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.TourItineraryTest" class="method navigator-link" hash-for-method="testcases_TourItineraryTest(Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, T...)">testcases_TourItineraryTest(Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, T...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.TourItineraryTest" class="method navigator-link" hash-for-method="testcases_TourItineraryTest(Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK...)">testcases_TourItineraryTest(Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.TourItineraryTest" class="method navigator-link" hash-for-method="testcases_TourItineraryTest(Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK...)">testcases_TourItineraryTest(Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.TourItineraryTest" class="method navigator-link" hash-for-method="testcases_TourItineraryTest(Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, ...)">testcases_TourItineraryTest(Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.TourItineraryTest" class="method navigator-link" hash-for-method="testcases_TourItineraryTest(Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, T...)">testcases_TourItineraryTest(Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, T...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.TourItineraryTest" class="method navigator-link" hash-for-method="testcases_TourItineraryTest(Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK...)">testcases_TourItineraryTest(Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-TestSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +266,102 @@
                     <div class="method-list-content passed suite-TestSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.AirItineraryTest" class="method navigator-link" hash-for-method="testcases_AirItineraryTest(Y, Check Air Itinerary #1, AU, GYV0258096C, 1, QANTAS AIRWAYS(QF ), 733, V, SYDNEY(SYD), ADELAIDE(AD...)">testcases_AirItineraryTest(Y, Check Air Itinerary #1, AU, GYV0258096C, 1, QANTAS AIRWAYS(QF ), 733, V, SYDNEY(SYD), ADELAIDE(AD...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.MiscItineraryTest" class="method navigator-link" hash-for-method="testcases_AirItineraryTest(Y, Check Misc/Other Itinerary #2, AU, , 2, ADMIN FEE(CAF), DAKAR(DKR), DAKAR(DKR), 23Jun2012, ATX , ...)">testcases_AirItineraryTest(Y, Check Misc/Other Itinerary #2, AU, , 2, ADMIN FEE(CAF), DAKAR(DKR), DAKAR(DKR), 23Jun2012, ATX , ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.AirItineraryTest" class="method navigator-link" hash-for-method="testcases_AirItineraryTest(Y, Check Air Itinerary #2, AU, , 2, QANTAS AIRWAYS(QF ), 744, L, ADELAIDE(ADL), SYDNEY(SYD), 27Mar20...)">testcases_AirItineraryTest(Y, Check Air Itinerary #2, AU, , 2, QANTAS AIRWAYS(QF ), 744, L, ADELAIDE(ADL), SYDNEY(SYD), 27Mar20...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.MiscItineraryTest" class="method navigator-link" hash-for-method="testcases_AirItineraryTest(Y, Check Misc/Other Itinerary #1, AU, GFP17479C, 1, ADMINISTRATION FEE(CMF), DAKAR(DKR), DAKAR(DKR),...)">testcases_AirItineraryTest(Y, Check Misc/Other Itinerary #1, AU, GFP17479C, 1, ADMINISTRATION FEE(CMF), DAKAR(DKR), DAKAR(DKR),...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_accounting.BSPTicketTest" class="method navigator-link" hash-for-method="testcases_BSPTicketTest(Y, Check BSP Ticket #1, AU, M7I86122C, BSP Tickets, 217, THAI AIRWAYS INTL, 2046685577, , 1)">testcases_BSPTicketTest(Y, Check BSP Ticket #1, AU, M7I86122C, BSP Tickets, 217, THAI AIRWAYS INTL, 2046685577, , 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_accounting.BSPTicketTest" class="method navigator-link" hash-for-method="testcases_BSPTicketTest(Y, Check BSP Ticket #2, AU, , BSP Tickets, 176, EMIRATES AIR, 2047964533, , 2)">testcases_BSPTicketTest(Y, Check BSP Ticket #2, AU, , BSP Tickets, 176, EMIRATES AIR, 2047964533, , 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.BusItineraryTest" class="method navigator-link" hash-for-method="testcases_BusItineraryTest(Y, Check Bus Itinerary #2, AU, , 2, OTHER BUS(ZZB), 9999, PERTH(PER), PERTH(PER), 06Aug2018, , , 2)">testcases_BusItineraryTest(Y, Check Bus Itinerary #2, AU, , 2, OTHER BUS(ZZB), 9999, PERTH(PER), PERTH(PER), 06Aug2018, , , 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.BusItineraryTest" class="method navigator-link" hash-for-method="testcases_BusItineraryTest(Y, Check Bus Itinerary #1, AU, G4S346C, 1, OTHER BUS(ZZB), 9999, BUNBURY(BUY), BUNBURY(BUY), 26Jun20...)">testcases_BusItineraryTest(Y, Check Bus Itinerary #1, AU, G4S346C, 1, OTHER BUS(ZZB), 9999, BUNBURY(BUY), BUNBURY(BUY), 26Jun20...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.CarItineraryTest" class="method navigator-link" hash-for-method="testcases_CarItineraryTest(Y, Check Car Itinerary #2, AU, , 2, AVIS(ZIC), IFAR - INTER 4WD AUTO A/C, MELBOURNE(MEL), 09Oct2023,...)">testcases_CarItineraryTest(Y, Check Car Itinerary #2, AU, , 2, AVIS(ZIC), IFAR - INTER 4WD AUTO A/C, MELBOURNE(MEL), 09Oct2023,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.CarItineraryTest" class="method navigator-link" hash-for-method="testcases_CarItineraryTest(Y, Check Car Itinerary #1, AU, J1E94583C, 1, AVIS(ZIC), ICAR - INTERMEDIATE CAR 2-4DR, ADELAIDE(ADL)...)">testcases_CarItineraryTest(Y, Check Car Itinerary #1, AU, J1E94583C, 1, AVIS(ZIC), ICAR - INTERMEDIATE CAR 2-4DR, ADELAIDE(ADL)...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-TestSuite" title="general.ChangeBranchTest" class="method navigator-link" hash-for-method="testcases_ChangeBranchTest(Y, Change Branch Test, AU, A11101000, A11101,, , 1)">testcases_ChangeBranchTest(Y, Change Branch Test, AU, A11101000, A11101,, , 1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite" title="general.LoginTest" class="method navigator-link" hash-for-method="testcases_LoginTest(Y, AU Production MyMatrix Login Test, AU, , AU MyMatrix, n, , 2)">testcases_LoginTest(Y, AU Production MyMatrix Login Test, AU, , AU MyMatrix, n, , 2)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestSuite" title="general.ClientfileSearchTest" class="method navigator-link" hash-for-method="testcases_ClientfileSearchTest(Y, Search Clientfile via PNR Locator, AU, , , IUFQVP, , , , , , , , , , , , , 2)">testcases_ClientfileSearchTest(Y, Search Clientfile via PNR Locator, AU, , , IUFQVP, , , , , , , , , , , , , 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="general.ClientfileSearchTest" class="method navigator-link" hash-for-method="testcases_ClientfileSearchTest(Y, Search Clientfile via Client File Number, AU, , , , , , AHW0587920C, AHW0587920C, , , , , , , , ,...)">testcases_ClientfileSearchTest(Y, Search Clientfile via Client File Number, AU, , , , , , AHW0587920C, AHW0587920C, , , , , , , , ,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="general.ClientfileSearchTest" class="method navigator-link" hash-for-method="testcases_ClientfileSearchTest(Y, Search Clientfile via Document, AU, , , , , , , , , , Ticket, 2757809733, , , , , 6)">testcases_ClientfileSearchTest(Y, Search Clientfile via Document, AU, , , , , , , , , , Ticket, 2757809733, , , , , 6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="general.ClientfileSearchTest" class="method navigator-link" hash-for-method="testcases_ClientfileSearchTest(Y, Search Clientfile via Client File Code, AU, , , , , , , , , , , , , 11F, , , 7)">testcases_ClientfileSearchTest(Y, Search Clientfile via Client File Code, AU, , , , , , , , , , , , , 11F, , , 7)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="general.ClientfileSearchTest" class="method navigator-link" hash-for-method="testcases_ClientfileSearchTest(Y, Search Clientfile via Full Name, AU, JOHNSON, TIM, , , , , , , , , , , , , , 1)">testcases_ClientfileSearchTest(Y, Search Clientfile via Full Name, AU, JOHNSON, TIM, , , , , , , , , , , , , , 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="general.ClientfileSearchTest" class="method navigator-link" hash-for-method="testcases_ClientfileSearchTest(Y, Search Clientfile via Booking Branch &amp; Client File Code, AU, , , , , , , , 3970, A13970, , , , W4...)">testcases_ClientfileSearchTest(Y, Search Clientfile via Booking Branch & Client File Code, AU, , , , , , , , 3970, A13970, , , , W4...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.HotelItineraryTest" class="method navigator-link" hash-for-method="testcases_HotelItineraryTest(Y, Check Hotel Itinerary #2, AU, , 2, INTERNATIONAL HOTELS(ZZH), COUNTRY APARTMENTS, DUBBO(DBO), 230...)">testcases_HotelItineraryTest(Y, Check Hotel Itinerary #2, AU, , 2, INTERNATIONAL HOTELS(ZZH), COUNTRY APARTMENTS, DUBBO(DBO), 230...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.HotelItineraryTest" class="method navigator-link" hash-for-method="testcases_HotelItineraryTest(Y, Check Hotel Itinerary #1, AU, 11F0042664C, 1, INTERNATIONAL HOTELS(ZZH), COUNTRY APARTMENTS, DUBB...)">testcases_HotelItineraryTest(Y, Check Hotel Itinerary #1, AU, 11F0042664C, 1, INTERNATIONAL HOTELS(ZZH), COUNTRY APARTMENTS, DUBB...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.HotelItineraryTest" class="method navigator-link" hash-for-method="testcases_HotelItineraryTest(Y, Check Hotel Itinerary #3, AU, , 3, INTERNATIONAL HOTELS(ZZH), COUNTRY APARTMENTS, BRISBANE(BNE), ...)">testcases_HotelItineraryTest(Y, Check Hotel Itinerary #3, AU, , 3, INTERNATIONAL HOTELS(ZZH), COUNTRY APARTMENTS, BRISBANE(BNE), ...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -118,17 +371,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="general.LoginTest" class="method navigator-link" hash-for-method="testcases_LoginTest(Y, AU Production MyMatrix Login Test, AU, , AU MyMatrix, n, , 2)">testcases_LoginTest(Y, AU Production MyMatrix Login Test, AU, , AU MyMatrix, n, , 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-TestSuite" title="general.LogoutTest" class="method navigator-link" hash-for-method="testcases_LogoutTest(Y, AU Production MyMatrix Logout Test, AU, , AU MyMatrix, Y, , 1)">testcases_LogoutTest(Y, AU Production MyMatrix Logout Test, AU, , AU MyMatrix, Y, , 1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite" title="queues.RMITest" class="method navigator-link" hash-for-method="testcases_RMITest(Y, RMI Search Test, AU, RMI, Search, , 1)">testcases_RMITest(Y, RMI Search Test, AU, RMI, Search, , 1)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestSuite" title="production_accounting.NonBSPTicketTest" class="method navigator-link" hash-for-method="testcases_NonBSPTicketTest(Y, Check Non-BSP Ticket #2, AU, , Non BSP Document, ASF, AIRLINE SURCHARGE FEE, 8, , 2)">testcases_NonBSPTicketTest(Y, Check Non-BSP Ticket #2, AU, , Non BSP Document, ASF, AIRLINE SURCHARGE FEE, 8, , 2)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite" title="queues.RMITest" class="method navigator-link" hash-for-method="testcases_RMITest(Y, RMA Queue Count Test, AU, RMA, Queue Count, , 4)">testcases_RMITest(Y, RMA Queue Count Test, AU, RMA, Queue Count, , 4)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestSuite" title="production_accounting.NonBSPTicketTest" class="method navigator-link" hash-for-method="testcases_NonBSPTicketTest(Y, Check Non-BSP Ticket #1, AU, M8V0091506C, Non BSP Document, DOB, DOM OBT FEE, 1, , 1)">testcases_NonBSPTicketTest(Y, Check Non-BSP Ticket #1, AU, M8V0091506C, Non BSP Document, DOB, DOM OBT FEE, 1, , 1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -139,6 +397,51 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-TestSuite" title="queues.RMITest" class="method navigator-link" hash-for-method="testcases_RMITest(Y, RMA Search Test, AU, RMA, Search, , 3)">testcases_RMITest(Y, RMA Search Test, AU, RMA, Search, , 3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="queues.RMITest" class="method navigator-link" hash-for-method="testcases_RMITest(Y, RMA Queue Count Test, AU, RMA, Queue Count, , 4)">testcases_RMITest(Y, RMA Queue Count Test, AU, RMA, Queue Count, , 4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="queues.RMITest" class="method navigator-link" hash-for-method="testcases_RMITest(Y, RMI Search Test, AU, RMI, Search, , 1)">testcases_RMITest(Y, RMI Search Test, AU, RMI, Search, , 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.RailItineraryTest" class="method navigator-link" hash-for-method="testcases_RailItineraryTest(Y, Check Rail Itinerary #2, AU, , 2, OTHER RAIL(XXR), 1818, GENEVA RAIL(8501118), ZURICH RAIL(850300...)">testcases_RailItineraryTest(Y, Check Rail Itinerary #2, AU, , 2, OTHER RAIL(XXR), 1818, GENEVA RAIL(8501118), ZURICH RAIL(850300...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.RailItineraryTest" class="method navigator-link" hash-for-method="testcases_RailItineraryTest(Y, Check Rail Itinerary #1, AU, 7LZ56C, 1, OTHER RAIL(XXR), 518, GENEVA RAIL(8501118), ZURICH RAIL(8...)">testcases_RailItineraryTest(Y, Check Rail Itinerary #1, AU, 7LZ56C, 1, OTHER RAIL(XXR), 518, GENEVA RAIL(8501118), ZURICH RAIL(8...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.RailItineraryTest" class="method navigator-link" hash-for-method="testcases_RailItineraryTest(Y, Check Rail Itinerary #3, AU, , 3, OTHER RAIL(XXR), 452047, GENEVA RAIL(8501118), ZURICH RAIL(8503...)">testcases_RailItineraryTest(Y, Check Rail Itinerary #3, AU, , 3, OTHER RAIL(XXR), 452047, GENEVA RAIL(8501118), ZURICH RAIL(8503...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.ShipItineraryTest" class="method navigator-link" hash-for-method="testcases_ShipItineraryTest(Y, Check Ship Itinerary #3, AU, , 3, SEALINK(SE2), ADELAIDE(ADL), PENNESHAW(PEA), 28Jul2016, SEA , ,...)">testcases_ShipItineraryTest(Y, Check Ship Itinerary #3, AU, , 3, SEALINK(SE2), ADELAIDE(ADL), PENNESHAW(PEA), 28Jul2016, SEA , ,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.ShipItineraryTest" class="method navigator-link" hash-for-method="testcases_ShipItineraryTest(Y, Check Ship Itinerary #2, AU, , 2, *(ZZ ), PENNESHAW(PEA), ADELAIDE(ADL), 25Jul2016, SEA , , 2)">testcases_ShipItineraryTest(Y, Check Ship Itinerary #2, AU, , 2, *(ZZ ), PENNESHAW(PEA), ADELAIDE(ADL), 25Jul2016, SEA , , 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.ShipItineraryTest" class="method navigator-link" hash-for-method="testcases_ShipItineraryTest(Y, Check Ship Itinerary #4, AU, , 4, SEALINK(SE2), ADELAIDE(ADL), PENNESHAW(PEA), 28Jul2016, SEA , ,...)">testcases_ShipItineraryTest(Y, Check Ship Itinerary #4, AU, , 4, SEALINK(SE2), ADELAIDE(ADL), PENNESHAW(PEA), 28Jul2016, SEA , ,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="production_itineraries.ShipItineraryTest" class="method navigator-link" hash-for-method="testcases_ShipItineraryTest(Y, Check Ship Itinerary #1, AU, ADS0439790C, 1, *(ZZ ), PENNESHAW(PEA), ADELAIDE(ADL), 25Jul2016, SE...)">testcases_ShipItineraryTest(Y, Check Ship Itinerary #1, AU, ADS0439790C, 1, *(ZZ ), PENNESHAW(PEA), ADELAIDE(ADL), 25Jul2016, SE...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestSuite -->
@@ -153,9 +456,352 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TestSuite" class="panel TestSuite">
-          <div class="suite-TestSuite-class-passed">
+          <div class="suite-TestSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">production_itineraries.TourItineraryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_TourItineraryTest(Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK...)">
+                  </a> <!-- testcases_TourItineraryTest(Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK...) -->
+                  <span class="method-name">testcases_TourItineraryTest</span>
+                  <span class="parameters">(Y,Check Tour Itinerary #1,AU,MDK0013416N,1,OTHER PACKAGES(ZZP),BANGKOK SUVARNABH(BKK),BANGKOK SUVARNABH(BKK),09May2015,TOUR,,1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_TourItineraryTest(Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, ...)">
+                  </a> <!-- testcases_TourItineraryTest(Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, ...) -->
+                  <span class="method-name">testcases_TourItineraryTest</span>
+                  <span class="parameters">(Y,Check Tour Itinerary #2,AU,,2,QANTAS HOLIDAYS(Q91),BRISBANE(BNE),BRISBANE(BNE),08Aug2015,TOUR,,2)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_TourItineraryTest(Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, T...)">
+                  </a> <!-- testcases_TourItineraryTest(Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, T...) -->
+                  <span class="method-name">testcases_TourItineraryTest</span>
+                  <span class="parameters">(Y,Check Tour Itinerary #3,AU,,3,OTHER PACKAGES(ZZP),BRISBANE(BNE),BRISBANE(BNE),08Aug2015,TOUR,,3)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-failed -->
+          <div class="suite-TestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">production_itineraries.InsuranceItineraryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08...)">
+                  </a> <!-- testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08...) -->
+                  <span class="method-name">testcases_InsuranceItineraryTest</span>
+                  <span class="parameters">(Y,Check Insurance Itinerary #1,AU,S9F2139C,1,QBE INSURANCE(QB1),SYDNEY(SYD),SYDNEY(SYD),,08Aug2015,,1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRAN...)">
+                  </a> <!-- testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRAN...) -->
+                  <span class="method-name">testcases_InsuranceItineraryTest</span>
+                  <span class="parameters">(Y,Check Insurance Itinerary #2,AU,,2,QBE INSURANCE(QB1),FRANKFURT INTERNATIONAL APT(FRA),FRANKFURT INTERNATIONAL APT(FRA),,16Sep2015,,2)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-failed -->
+          <div class="suite-TestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">general.ClientfileSearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_ClientfileSearchTest(Y, Search Clientfile via Departure Date &amp; Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, ...)">
+                  </a> <!-- testcases_ClientfileSearchTest(Y, Search Clientfile via Departure Date & Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, ...) -->
+                  <span class="method-name">testcases_ClientfileSearchTest</span>
+                  <span class="parameters">(Y,Search Clientfile via Departure Date & Booking Branch,AU,,,,17Jul2025,19Aug2025,,,3970,A13970,,,,,,,4)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Search&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Search&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfileInformationPage.searchClientfile(ClientfileInformationPage.java:105)
+	at general.ClientfileSearchTest.testcases_ClientfileSearchTest(ClientfileSearchTest.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-failed -->
+          <div class="suite-TestSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">production_itineraries.TourItineraryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_TourItineraryTest(Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, ...)">
+                  </a> <!-- testcases_TourItineraryTest(Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, ...) -->
+                  <span class="method-name">testcases_TourItineraryTest</span>
+                  <span class="parameters">(Y,Check Tour Itinerary #2,AU,,2,QANTAS HOLIDAYS(Q91),BRISBANE(BNE),BRISBANE(BNE),08Aug2015,TOUR,,2)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_TourItineraryTest(Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, T...)">
+                  </a> <!-- testcases_TourItineraryTest(Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, T...) -->
+                  <span class="method-name">testcases_TourItineraryTest</span>
+                  <span class="parameters">(Y,Check Tour Itinerary #3,AU,,3,OTHER PACKAGES(ZZP),BRISBANE(BNE),BRISBANE(BNE),08Aug2015,TOUR,,3)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_TourItineraryTest(Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, ...)">
+                  </a> <!-- testcases_TourItineraryTest(Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, ...) -->
+                  <span class="method-name">testcases_TourItineraryTest</span>
+                  <span class="parameters">(Y,Check Tour Itinerary #2,AU,,2,QANTAS HOLIDAYS(Q91),BRISBANE(BNE),BRISBANE(BNE),08Aug2015,TOUR,,2)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_TourItineraryTest(Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, T...)">
+                  </a> <!-- testcases_TourItineraryTest(Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, T...) -->
+                  <span class="method-name">testcases_TourItineraryTest</span>
+                  <span class="parameters">(Y,Check Tour Itinerary #3,AU,,3,OTHER PACKAGES(ZZP),BRISBANE(BNE),BRISBANE(BNE),08Aug2015,TOUR,,3)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_TourItineraryTest(Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK...)">
+                  </a> <!-- testcases_TourItineraryTest(Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK...) -->
+                  <span class="method-name">testcases_TourItineraryTest</span>
+                  <span class="parameters">(Y,Check Tour Itinerary #1,AU,MDK0013416N,1,OTHER PACKAGES(ZZP),BANGKOK SUVARNABH(BKK),BANGKOK SUVARNABH(BKK),09May2015,TOUR,,1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_TourItineraryTest(Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK...)">
+                  </a> <!-- testcases_TourItineraryTest(Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK...) -->
+                  <span class="method-name">testcases_TourItineraryTest</span>
+                  <span class="parameters">(Y,Check Tour Itinerary #1,AU,MDK0013416N,1,OTHER PACKAGES(ZZP),BANGKOK SUVARNABH(BKK),BANGKOK SUVARNABH(BKK),09May2015,TOUR,,1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_TourItineraryTest(Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, ...)">
+                  </a> <!-- testcases_TourItineraryTest(Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, ...) -->
+                  <span class="method-name">testcases_TourItineraryTest</span>
+                  <span class="parameters">(Y,Check Tour Itinerary #2,AU,,2,QANTAS HOLIDAYS(Q91),BRISBANE(BNE),BRISBANE(BNE),08Aug2015,TOUR,,2)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_TourItineraryTest(Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, T...)">
+                  </a> <!-- testcases_TourItineraryTest(Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, T...) -->
+                  <span class="method-name">testcases_TourItineraryTest</span>
+                  <span class="parameters">(Y,Check Tour Itinerary #3,AU,,3,OTHER PACKAGES(ZZP),BRISBANE(BNE),BRISBANE(BNE),08Aug2015,TOUR,,3)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_TourItineraryTest(Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK...)">
+                  </a> <!-- testcases_TourItineraryTest(Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK...) -->
+                  <span class="method-name">testcases_TourItineraryTest</span>
+                  <span class="parameters">(Y,Check Tour Itinerary #1,AU,MDK0013416N,1,OTHER PACKAGES(ZZP),BANGKOK SUVARNABH(BKK),BANGKOK SUVARNABH(BKK),09May2015,TOUR,,1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openTourItineraryPage(ClientfilePage.java:133)
+	at production_itineraries.TourItineraryTest.testcases_TourItineraryTest(TourItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-skipped -->
+          <div class="suite-TestSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">production_accounting.BSPTicketTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_BSPTicketTest(Y, Check BSP Ticket #2, AU, , BSP Tickets, 176, EMIRATES AIR, 2047964533, , 2)">
+                  </a> <!-- testcases_BSPTicketTest(Y, Check BSP Ticket #2, AU, , BSP Tickets, 176, EMIRATES AIR, 2047964533, , 2) -->
+                  <span class="method-name">testcases_BSPTicketTest</span>
+                  <span class="parameters">(Y,Check BSP Ticket #2,AU,,BSP Tickets,176,EMIRATES AIR,2047964533,,2)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [Document Type &apos;BSP Tickets&apos; with Document Number &apos;2047964533&apos;] but found [Did not locate the Document Type &apos;BSP Tickets&apos; with Document Number &apos;2047964533&apos;]
+	at production_accounting.BSPTicketTest.testcases_BSPTicketTest(BSPTicketTest.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-skipped -->
+          <div class="suite-TestSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
               <span class="class-name">general.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -165,6 +811,16 @@
                   </a> <!-- testcases_LoginTest(Y, AU Production MyMatrix Login Test, AU, , AU MyMatrix, n, , 2) -->
                   <span class="method-name">testcases_LoginTest</span>
                   <span class="parameters">(Y,AU Production MyMatrix Login Test,AU,,AU MyMatrix,n,,2)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [The user successfully logged in] but found [The user failed  to log in]
+	at general.LoginTest.testcases_LoginTest(LoginTest.java:94)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -173,6 +829,458 @@
                   </a> <!-- testcases_LoginTest(Y, AU Production IRDB Login Test, AU, , AU IRDB, Y, , 1) -->
                   <span class="method-name">testcases_LoginTest</span>
                   <span class="parameters">(Y,AU Production IRDB Login Test,AU,,AU IRDB,Y,,1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Region&apos; Drop-Down&quot; was clicked] but found [The WebElement &quot;&apos;Region&apos; Drop-Down&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.LoginPage.selectRegion(LoginPage.java:41)
+	at general.LoginTest.testcases_LoginTest(LoginTest.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-skipped -->
+          <div class="suite-TestSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">general.ClientfileSearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_ClientfileSearchTest(Y, Search Clientfile via Departure Date &amp; Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, ...)">
+                  </a> <!-- testcases_ClientfileSearchTest(Y, Search Clientfile via Departure Date & Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, ...) -->
+                  <span class="method-name">testcases_ClientfileSearchTest</span>
+                  <span class="parameters">(Y,Search Clientfile via Departure Date & Booking Branch,AU,,,,17Jul2025,19Aug2025,,,3970,A13970,,,,,,,4)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Search&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Search&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfileInformationPage.searchClientfile(ClientfileInformationPage.java:105)
+	at general.ClientfileSearchTest.testcases_ClientfileSearchTest(ClientfileSearchTest.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_ClientfileSearchTest(Y, Search Clientfile via Departure Date &amp; Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, ...)">
+                  </a> <!-- testcases_ClientfileSearchTest(Y, Search Clientfile via Departure Date & Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, ...) -->
+                  <span class="method-name">testcases_ClientfileSearchTest</span>
+                  <span class="parameters">(Y,Search Clientfile via Departure Date & Booking Branch,AU,,,,17Jul2025,19Aug2025,,,3970,A13970,,,,,,,4)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [19Aug2025] but found [08Feb2025],
+	expected [A13970] but found [A14920]
+	at general.ClientfileSearchTest.testcases_ClientfileSearchTest(ClientfileSearchTest.java:172)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_ClientfileSearchTest(Y, Search Clientfile via Client File Code, AU, , , , , , , , , , , , , 11F, , , 7)">
+                  </a> <!-- testcases_ClientfileSearchTest(Y, Search Clientfile via Client File Code, AU, , , , , , , , , , , , , 11F, , , 7) -->
+                  <span class="method-name">testcases_ClientfileSearchTest</span>
+                  <span class="parameters">(Y,Search Clientfile via Client File Code,AU,,,,,,,,,,,,,11F,,,7)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;View&apos; Menu Listing Drop-Down&quot; was clicked] but found [The WebElement &quot;&apos;View&apos; Menu Listing Drop-Down&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.HomePage.goToClientfileInformationPage(HomePage.java:24)
+	at general.ClientfileSearchTest.testcases_ClientfileSearchTest(ClientfileSearchTest.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_ClientfileSearchTest(Y, Search Clientfile via Full Name, AU, JOHNSON, TIM, , , , , , , , , , , , , , 1)">
+                  </a> <!-- testcases_ClientfileSearchTest(Y, Search Clientfile via Full Name, AU, JOHNSON, TIM, , , , , , , , , , , , , , 1) -->
+                  <span class="method-name">testcases_ClientfileSearchTest</span>
+                  <span class="parameters">(Y,Search Clientfile via Full Name,AU,JOHNSON,TIM,,,,,,,,,,,,,,1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Search&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Search&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfileInformationPage.searchClientfile(ClientfileInformationPage.java:105)
+	at general.ClientfileSearchTest.testcases_ClientfileSearchTest(ClientfileSearchTest.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_ClientfileSearchTest(Y, Search Clientfile via Departure Date &amp; Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, ...)">
+                  </a> <!-- testcases_ClientfileSearchTest(Y, Search Clientfile via Departure Date & Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, ...) -->
+                  <span class="method-name">testcases_ClientfileSearchTest</span>
+                  <span class="parameters">(Y,Search Clientfile via Departure Date & Booking Branch,AU,,,,17Jul2025,19Aug2025,,,3970,A13970,,,,,,,4)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Search&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Search&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfileInformationPage.searchClientfile(ClientfileInformationPage.java:105)
+	at general.ClientfileSearchTest.testcases_ClientfileSearchTest(ClientfileSearchTest.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-skipped -->
+          <div class="suite-TestSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">production_itineraries.InsuranceItineraryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRAN...)">
+                  </a> <!-- testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRAN...) -->
+                  <span class="method-name">testcases_InsuranceItineraryTest</span>
+                  <span class="parameters">(Y,Check Insurance Itinerary #2,AU,,2,QBE INSURANCE(QB1),FRANKFURT INTERNATIONAL APT(FRA),FRANKFURT INTERNATIONAL APT(FRA),,16Sep2015,,2)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08...)">
+                  </a> <!-- testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08...) -->
+                  <span class="method-name">testcases_InsuranceItineraryTest</span>
+                  <span class="parameters">(Y,Check Insurance Itinerary #1,AU,S9F2139C,1,QBE INSURANCE(QB1),SYDNEY(SYD),SYDNEY(SYD),,08Aug2015,,1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08...)">
+                  </a> <!-- testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08...) -->
+                  <span class="method-name">testcases_InsuranceItineraryTest</span>
+                  <span class="parameters">(Y,Check Insurance Itinerary #1,AU,S9F2139C,1,QBE INSURANCE(QB1),SYDNEY(SYD),SYDNEY(SYD),,08Aug2015,,1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRAN...)">
+                  </a> <!-- testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRAN...) -->
+                  <span class="method-name">testcases_InsuranceItineraryTest</span>
+                  <span class="parameters">(Y,Check Insurance Itinerary #2,AU,,2,QBE INSURANCE(QB1),FRANKFURT INTERNATIONAL APT(FRA),FRANKFURT INTERNATIONAL APT(FRA),,16Sep2015,,2)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08...)">
+                  </a> <!-- testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08...) -->
+                  <span class="method-name">testcases_InsuranceItineraryTest</span>
+                  <span class="parameters">(Y,Check Insurance Itinerary #1,AU,S9F2139C,1,QBE INSURANCE(QB1),SYDNEY(SYD),SYDNEY(SYD),,08Aug2015,,1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRAN...)">
+                  </a> <!-- testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRAN...) -->
+                  <span class="method-name">testcases_InsuranceItineraryTest</span>
+                  <span class="parameters">(Y,Check Insurance Itinerary #2,AU,,2,QBE INSURANCE(QB1),FRANKFURT INTERNATIONAL APT(FRA),FRANKFURT INTERNATIONAL APT(FRA),,16Sep2015,,2)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; was clicked] but found [The WebElement &quot;&apos;Expand Itineraries Section&apos; Button&quot; is not clickable]
+	at utilityClasses.ReportLoggerMethods.click(ReportLoggerMethods.java:124)
+	at pagemethods.ClientfilePage.openInsuranceItineraryPage(ClientfilePage.java:100)
+	at production_itineraries.InsuranceItineraryTest.testcases_InsuranceItineraryTest(InsuranceItineraryTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-skipped -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">production_itineraries.BusItineraryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_BusItineraryTest(Y, Check Bus Itinerary #2, AU, , 2, OTHER BUS(ZZB), 9999, PERTH(PER), PERTH(PER), 06Aug2018, , , 2)">
+                  </a> <!-- testcases_BusItineraryTest(Y, Check Bus Itinerary #2, AU, , 2, OTHER BUS(ZZB), 9999, PERTH(PER), PERTH(PER), 06Aug2018, , , 2) -->
+                  <span class="method-name">testcases_BusItineraryTest</span>
+                  <span class="parameters">(Y,Check Bus Itinerary #2,AU,,2,OTHER BUS(ZZB),9999,PERTH(PER),PERTH(PER),06Aug2018,,,2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_BusItineraryTest(Y, Check Bus Itinerary #1, AU, G4S346C, 1, OTHER BUS(ZZB), 9999, BUNBURY(BUY), BUNBURY(BUY), 26Jun20...)">
+                  </a> <!-- testcases_BusItineraryTest(Y, Check Bus Itinerary #1, AU, G4S346C, 1, OTHER BUS(ZZB), 9999, BUNBURY(BUY), BUNBURY(BUY), 26Jun20...) -->
+                  <span class="method-name">testcases_BusItineraryTest</span>
+                  <span class="parameters">(Y,Check Bus Itinerary #1,AU,G4S346C,1,OTHER BUS(ZZB),9999,BUNBURY(BUY),BUNBURY(BUY),26Jun2018,,,1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">production_itineraries.CarItineraryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_CarItineraryTest(Y, Check Car Itinerary #2, AU, , 2, AVIS(ZIC), IFAR - INTER 4WD AUTO A/C, MELBOURNE(MEL), 09Oct2023,...)">
+                  </a> <!-- testcases_CarItineraryTest(Y, Check Car Itinerary #2, AU, , 2, AVIS(ZIC), IFAR - INTER 4WD AUTO A/C, MELBOURNE(MEL), 09Oct2023,...) -->
+                  <span class="method-name">testcases_CarItineraryTest</span>
+                  <span class="parameters">(Y,Check Car Itinerary #2,AU,,2,AVIS(ZIC),IFAR - INTER 4WD AUTO A/C,MELBOURNE(MEL),09Oct2023,,2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_CarItineraryTest(Y, Check Car Itinerary #1, AU, J1E94583C, 1, AVIS(ZIC), ICAR - INTERMEDIATE CAR 2-4DR, ADELAIDE(ADL)...)">
+                  </a> <!-- testcases_CarItineraryTest(Y, Check Car Itinerary #1, AU, J1E94583C, 1, AVIS(ZIC), ICAR - INTERMEDIATE CAR 2-4DR, ADELAIDE(ADL)...) -->
+                  <span class="method-name">testcases_CarItineraryTest</span>
+                  <span class="parameters">(Y,Check Car Itinerary #1,AU,J1E94583C,1,AVIS(ZIC),ICAR - INTERMEDIATE CAR 2-4DR,ADELAIDE(ADL),08Oct2023,,1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">production_itineraries.MiscItineraryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_AirItineraryTest(Y, Check Misc/Other Itinerary #2, AU, , 2, ADMIN FEE(CAF), DAKAR(DKR), DAKAR(DKR), 23Jun2012, ATX , ...)">
+                  </a> <!-- testcases_AirItineraryTest(Y, Check Misc/Other Itinerary #2, AU, , 2, ADMIN FEE(CAF), DAKAR(DKR), DAKAR(DKR), 23Jun2012, ATX , ...) -->
+                  <span class="method-name">testcases_AirItineraryTest</span>
+                  <span class="parameters">(Y,Check Misc/Other Itinerary #2,AU,,2,ADMIN FEE(CAF),DAKAR(DKR),DAKAR(DKR),23Jun2012,ATX ,,2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_AirItineraryTest(Y, Check Misc/Other Itinerary #1, AU, GFP17479C, 1, ADMINISTRATION FEE(CMF), DAKAR(DKR), DAKAR(DKR),...)">
+                  </a> <!-- testcases_AirItineraryTest(Y, Check Misc/Other Itinerary #1, AU, GFP17479C, 1, ADMINISTRATION FEE(CMF), DAKAR(DKR), DAKAR(DKR),...) -->
+                  <span class="method-name">testcases_AirItineraryTest</span>
+                  <span class="parameters">(Y,Check Misc/Other Itinerary #1,AU,GFP17479C,1,ADMINISTRATION FEE(CMF),DAKAR(DKR),DAKAR(DKR),23Jun2012,ATX ,,1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">production_itineraries.RailItineraryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_RailItineraryTest(Y, Check Rail Itinerary #2, AU, , 2, OTHER RAIL(XXR), 1818, GENEVA RAIL(8501118), ZURICH RAIL(850300...)">
+                  </a> <!-- testcases_RailItineraryTest(Y, Check Rail Itinerary #2, AU, , 2, OTHER RAIL(XXR), 1818, GENEVA RAIL(8501118), ZURICH RAIL(850300...) -->
+                  <span class="method-name">testcases_RailItineraryTest</span>
+                  <span class="parameters">(Y,Check Rail Itinerary #2,AU,,2,OTHER RAIL(XXR),1818,GENEVA RAIL(8501118),ZURICH RAIL(8503000),27Oct2025,C,,2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_RailItineraryTest(Y, Check Rail Itinerary #1, AU, 7LZ56C, 1, OTHER RAIL(XXR), 518, GENEVA RAIL(8501118), ZURICH RAIL(8...)">
+                  </a> <!-- testcases_RailItineraryTest(Y, Check Rail Itinerary #1, AU, 7LZ56C, 1, OTHER RAIL(XXR), 518, GENEVA RAIL(8501118), ZURICH RAIL(8...) -->
+                  <span class="method-name">testcases_RailItineraryTest</span>
+                  <span class="parameters">(Y,Check Rail Itinerary #1,AU,7LZ56C,1,OTHER RAIL(XXR),518,GENEVA RAIL(8501118),ZURICH RAIL(8503000),27Oct2025,C,,1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_RailItineraryTest(Y, Check Rail Itinerary #3, AU, , 3, OTHER RAIL(XXR), 452047, GENEVA RAIL(8501118), ZURICH RAIL(8503...)">
+                  </a> <!-- testcases_RailItineraryTest(Y, Check Rail Itinerary #3, AU, , 3, OTHER RAIL(XXR), 452047, GENEVA RAIL(8501118), ZURICH RAIL(8503...) -->
+                  <span class="method-name">testcases_RailItineraryTest</span>
+                  <span class="parameters">(Y,Check Rail Itinerary #3,AU,,3,OTHER RAIL(XXR),452047,GENEVA RAIL(8501118),ZURICH RAIL(8503000),27Oct2025,C,,3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">general.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_LoginTest(Y, AU Production IRDB Login Test, AU, , AU IRDB, Y, , 1)">
+                  </a> <!-- testcases_LoginTest(Y, AU Production IRDB Login Test, AU, , AU IRDB, Y, , 1) -->
+                  <span class="method-name">testcases_LoginTest</span>
+                  <span class="parameters">(Y,AU Production IRDB Login Test,AU,,AU IRDB,Y,,1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_LoginTest(Y, AU Production MyMatrix Login Test, AU, , AU MyMatrix, n, , 2)">
+                  </a> <!-- testcases_LoginTest(Y, AU Production MyMatrix Login Test, AU, , AU MyMatrix, n, , 2) -->
+                  <span class="method-name">testcases_LoginTest</span>
+                  <span class="parameters">(Y,AU Production MyMatrix Login Test,AU,,AU MyMatrix,n,,2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">production_itineraries.HotelItineraryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_HotelItineraryTest(Y, Check Hotel Itinerary #2, AU, , 2, INTERNATIONAL HOTELS(ZZH), COUNTRY APARTMENTS, DUBBO(DBO), 230...)">
+                  </a> <!-- testcases_HotelItineraryTest(Y, Check Hotel Itinerary #2, AU, , 2, INTERNATIONAL HOTELS(ZZH), COUNTRY APARTMENTS, DUBBO(DBO), 230...) -->
+                  <span class="method-name">testcases_HotelItineraryTest</span>
+                  <span class="parameters">(Y,Check Hotel Itinerary #2,AU,,2,INTERNATIONAL HOTELS(ZZH),COUNTRY APARTMENTS,DUBBO(DBO),230 BRISBANE STREET DUBBO 2830,61268851141,AP1 - 1 BEDROOM APARTMENT,10Feb2023,,2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_HotelItineraryTest(Y, Check Hotel Itinerary #1, AU, 11F0042664C, 1, INTERNATIONAL HOTELS(ZZH), COUNTRY APARTMENTS, DUBB...)">
+                  </a> <!-- testcases_HotelItineraryTest(Y, Check Hotel Itinerary #1, AU, 11F0042664C, 1, INTERNATIONAL HOTELS(ZZH), COUNTRY APARTMENTS, DUBB...) -->
+                  <span class="method-name">testcases_HotelItineraryTest</span>
+                  <span class="parameters">(Y,Check Hotel Itinerary #1,AU,11F0042664C,1,INTERNATIONAL HOTELS(ZZH),COUNTRY APARTMENTS,DUBBO(DBO),230 BRISBANE STREET, DUBBO NSW 2830,61268851141,AP2 - 2 BEDROOM APARTMENT,06Feb2023,,1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_HotelItineraryTest(Y, Check Hotel Itinerary #3, AU, , 3, INTERNATIONAL HOTELS(ZZH), COUNTRY APARTMENTS, BRISBANE(BNE), ...)">
+                  </a> <!-- testcases_HotelItineraryTest(Y, Check Hotel Itinerary #3, AU, , 3, INTERNATIONAL HOTELS(ZZH), COUNTRY APARTMENTS, BRISBANE(BNE), ...) -->
+                  <span class="method-name">testcases_HotelItineraryTest</span>
+                  <span class="parameters">(Y,Check Hotel Itinerary #3,AU,,3,INTERNATIONAL HOTELS(ZZH),COUNTRY APARTMENTS,BRISBANE(BNE),230 BRISBANE STREET DUBBO NSW,61268851141,AP1 - 1 BEDROOM APARTMENT,13Feb2023,,3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">queues.RMITest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_RMITest(Y, RMI Queue Count Test, AU, RMI, Queue Count, , 2)">
+                  </a> <!-- testcases_RMITest(Y, RMI Queue Count Test, AU, RMI, Queue Count, , 2) -->
+                  <span class="method-name">testcases_RMITest</span>
+                  <span class="parameters">(Y,RMI Queue Count Test,AU,RMI,Queue Count,,2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_RMITest(Y, RMA Search Test, AU, RMA, Search, , 3)">
+                  </a> <!-- testcases_RMITest(Y, RMA Search Test, AU, RMA, Search, , 3) -->
+                  <span class="method-name">testcases_RMITest</span>
+                  <span class="parameters">(Y,RMA Search Test,AU,RMA,Search,,3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_RMITest(Y, RMA Queue Count Test, AU, RMA, Queue Count, , 4)">
+                  </a> <!-- testcases_RMITest(Y, RMA Queue Count Test, AU, RMA, Queue Count, , 4) -->
+                  <span class="method-name">testcases_RMITest</span>
+                  <span class="parameters">(Y,RMA Queue Count Test,AU,RMA,Queue Count,,4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_RMITest(Y, RMI Search Test, AU, RMI, Search, , 1)">
+                  </a> <!-- testcases_RMITest(Y, RMI Search Test, AU, RMI, Search, , 1) -->
+                  <span class="method-name">testcases_RMITest</span>
+                  <span class="parameters">(Y,RMI Search Test,AU,RMI,Search,,1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">general.ChangeBranchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_ChangeBranchTest(Y, Change Branch Test, AU, A11101000, A11101,, , 1)">
+                  </a> <!-- testcases_ChangeBranchTest(Y, Change Branch Test, AU, A11101000, A11101,, , 1) -->
+                  <span class="method-name">testcases_ChangeBranchTest</span>
+                  <span class="parameters">(Y,Change Branch Test,AU,A11101000,A11101,,,1)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -196,39 +1304,23 @@
           <div class="suite-TestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">queues.RMITest</span>
+              <span class="class-name">production_accounting.BSPTicketTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testcases_RMITest(Y, RMI Search Test, AU, RMI, Search, , 1)">
-                  </a> <!-- testcases_RMITest(Y, RMI Search Test, AU, RMI, Search, , 1) -->
-                  <span class="method-name">testcases_RMITest</span>
-                  <span class="parameters">(Y,RMI Search Test,AU,RMI,Search,,1)</span>
+                  <a name="testcases_BSPTicketTest(Y, Check BSP Ticket #1, AU, M7I86122C, BSP Tickets, 217, THAI AIRWAYS INTL, 2046685577, , 1)">
+                  </a> <!-- testcases_BSPTicketTest(Y, Check BSP Ticket #1, AU, M7I86122C, BSP Tickets, 217, THAI AIRWAYS INTL, 2046685577, , 1) -->
+                  <span class="method-name">testcases_BSPTicketTest</span>
+                  <span class="parameters">(Y,Check BSP Ticket #1,AU,M7I86122C,BSP Tickets,217,THAI AIRWAYS INTL,2046685577,,1)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testcases_RMITest(Y, RMA Queue Count Test, AU, RMA, Queue Count, , 4)">
-                  </a> <!-- testcases_RMITest(Y, RMA Queue Count Test, AU, RMA, Queue Count, , 4) -->
-                  <span class="method-name">testcases_RMITest</span>
-                  <span class="parameters">(Y,RMA Queue Count Test,AU,RMA,Queue Count,,4)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testcases_RMITest(Y, RMI Queue Count Test, AU, RMI, Queue Count, , 2)">
-                  </a> <!-- testcases_RMITest(Y, RMI Queue Count Test, AU, RMI, Queue Count, , 2) -->
-                  <span class="method-name">testcases_RMITest</span>
-                  <span class="parameters">(Y,RMI Queue Count Test,AU,RMI,Queue Count,,2)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testcases_RMITest(Y, RMA Search Test, AU, RMA, Search, , 3)">
-                  </a> <!-- testcases_RMITest(Y, RMA Search Test, AU, RMA, Search, , 3) -->
-                  <span class="method-name">testcases_RMITest</span>
-                  <span class="parameters">(Y,RMA Search Test,AU,RMA,Search,,3)</span>
+                  <a name="testcases_BSPTicketTest(Y, Check BSP Ticket #2, AU, , BSP Tickets, 176, EMIRATES AIR, 2047964533, , 2)">
+                  </a> <!-- testcases_BSPTicketTest(Y, Check BSP Ticket #2, AU, , BSP Tickets, 176, EMIRATES AIR, 2047964533, , 2) -->
+                  <span class="method-name">testcases_BSPTicketTest</span>
+                  <span class="parameters">(Y,Check BSP Ticket #2,AU,,BSP Tickets,176,EMIRATES AIR,2047964533,,2)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -236,15 +1328,143 @@
           <div class="suite-TestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">general.ChangeBranchTest</span>
+              <span class="class-name">production_itineraries.AirItineraryTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testcases_ChangeBranchTest(Y, Change Branch Test, AU, A11101000, A11101,, , 1)">
-                  </a> <!-- testcases_ChangeBranchTest(Y, Change Branch Test, AU, A11101000, A11101,, , 1) -->
-                  <span class="method-name">testcases_ChangeBranchTest</span>
-                  <span class="parameters">(Y,Change Branch Test,AU,A11101000,A11101,,,1)</span>
+                  <a name="testcases_AirItineraryTest(Y, Check Air Itinerary #1, AU, GYV0258096C, 1, QANTAS AIRWAYS(QF ), 733, V, SYDNEY(SYD), ADELAIDE(AD...)">
+                  </a> <!-- testcases_AirItineraryTest(Y, Check Air Itinerary #1, AU, GYV0258096C, 1, QANTAS AIRWAYS(QF ), 733, V, SYDNEY(SYD), ADELAIDE(AD...) -->
+                  <span class="method-name">testcases_AirItineraryTest</span>
+                  <span class="parameters">(Y,Check Air Itinerary #1,AU,GYV0258096C,1,QANTAS AIRWAYS(QF ),733,V,SYDNEY(SYD),ADELAIDE(ADL),25Mar2024,,1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_AirItineraryTest(Y, Check Air Itinerary #2, AU, , 2, QANTAS AIRWAYS(QF ), 744, L, ADELAIDE(ADL), SYDNEY(SYD), 27Mar20...)">
+                  </a> <!-- testcases_AirItineraryTest(Y, Check Air Itinerary #2, AU, , 2, QANTAS AIRWAYS(QF ), 744, L, ADELAIDE(ADL), SYDNEY(SYD), 27Mar20...) -->
+                  <span class="method-name">testcases_AirItineraryTest</span>
+                  <span class="parameters">(Y,Check Air Itinerary #2,AU,,2,QANTAS AIRWAYS(QF ),744,L,ADELAIDE(ADL),SYDNEY(SYD),27Mar2024,,2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">general.ClientfileSearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_ClientfileSearchTest(Y, Search Clientfile via PNR Locator, AU, , , IUFQVP, , , , , , , , , , , , , 2)">
+                  </a> <!-- testcases_ClientfileSearchTest(Y, Search Clientfile via PNR Locator, AU, , , IUFQVP, , , , , , , , , , , , , 2) -->
+                  <span class="method-name">testcases_ClientfileSearchTest</span>
+                  <span class="parameters">(Y,Search Clientfile via PNR Locator,AU,,,IUFQVP,,,,,,,,,,,,,2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_ClientfileSearchTest(Y, Search Clientfile via Client File Number, AU, , , , , , AHW0587920C, AHW0587920C, , , , , , , , ,...)">
+                  </a> <!-- testcases_ClientfileSearchTest(Y, Search Clientfile via Client File Number, AU, , , , , , AHW0587920C, AHW0587920C, , , , , , , , ,...) -->
+                  <span class="method-name">testcases_ClientfileSearchTest</span>
+                  <span class="parameters">(Y,Search Clientfile via Client File Number,AU,,,,,,AHW0587920C,AHW0587920C,,,,,,,,,3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_ClientfileSearchTest(Y, Search Clientfile via Document, AU, , , , , , , , , , Ticket, 2757809733, , , , , 6)">
+                  </a> <!-- testcases_ClientfileSearchTest(Y, Search Clientfile via Document, AU, , , , , , , , , , Ticket, 2757809733, , , , , 6) -->
+                  <span class="method-name">testcases_ClientfileSearchTest</span>
+                  <span class="parameters">(Y,Search Clientfile via Document,AU,,,,,,,,,,Ticket,2757809733,,,,,6)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_ClientfileSearchTest(Y, Search Clientfile via Client File Code, AU, , , , , , , , , , , , , 11F, , , 7)">
+                  </a> <!-- testcases_ClientfileSearchTest(Y, Search Clientfile via Client File Code, AU, , , , , , , , , , , , , 11F, , , 7) -->
+                  <span class="method-name">testcases_ClientfileSearchTest</span>
+                  <span class="parameters">(Y,Search Clientfile via Client File Code,AU,,,,,,,,,,,,,11F,,,7)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_ClientfileSearchTest(Y, Search Clientfile via Full Name, AU, JOHNSON, TIM, , , , , , , , , , , , , , 1)">
+                  </a> <!-- testcases_ClientfileSearchTest(Y, Search Clientfile via Full Name, AU, JOHNSON, TIM, , , , , , , , , , , , , , 1) -->
+                  <span class="method-name">testcases_ClientfileSearchTest</span>
+                  <span class="parameters">(Y,Search Clientfile via Full Name,AU,JOHNSON,TIM,,,,,,,,,,,,,,1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_ClientfileSearchTest(Y, Search Clientfile via Booking Branch &amp; Client File Code, AU, , , , , , , , 3970, A13970, , , , W4...)">
+                  </a> <!-- testcases_ClientfileSearchTest(Y, Search Clientfile via Booking Branch & Client File Code, AU, , , , , , , , 3970, A13970, , , , W4...) -->
+                  <span class="method-name">testcases_ClientfileSearchTest</span>
+                  <span class="parameters">(Y,Search Clientfile via Booking Branch & Client File Code,AU,,,,,,,,3970,A13970,,,,W44,,,5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">production_itineraries.ShipItineraryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_ShipItineraryTest(Y, Check Ship Itinerary #3, AU, , 3, SEALINK(SE2), ADELAIDE(ADL), PENNESHAW(PEA), 28Jul2016, SEA , ,...)">
+                  </a> <!-- testcases_ShipItineraryTest(Y, Check Ship Itinerary #3, AU, , 3, SEALINK(SE2), ADELAIDE(ADL), PENNESHAW(PEA), 28Jul2016, SEA , ,...) -->
+                  <span class="method-name">testcases_ShipItineraryTest</span>
+                  <span class="parameters">(Y,Check Ship Itinerary #3,AU,,3,SEALINK(SE2),ADELAIDE(ADL),PENNESHAW(PEA),28Jul2016,SEA ,,3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_ShipItineraryTest(Y, Check Ship Itinerary #2, AU, , 2, *(ZZ ), PENNESHAW(PEA), ADELAIDE(ADL), 25Jul2016, SEA , , 2)">
+                  </a> <!-- testcases_ShipItineraryTest(Y, Check Ship Itinerary #2, AU, , 2, *(ZZ ), PENNESHAW(PEA), ADELAIDE(ADL), 25Jul2016, SEA , , 2) -->
+                  <span class="method-name">testcases_ShipItineraryTest</span>
+                  <span class="parameters">(Y,Check Ship Itinerary #2,AU,,2,*(ZZ ),PENNESHAW(PEA),ADELAIDE(ADL),25Jul2016,SEA ,,2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_ShipItineraryTest(Y, Check Ship Itinerary #4, AU, , 4, SEALINK(SE2), ADELAIDE(ADL), PENNESHAW(PEA), 28Jul2016, SEA , ,...)">
+                  </a> <!-- testcases_ShipItineraryTest(Y, Check Ship Itinerary #4, AU, , 4, SEALINK(SE2), ADELAIDE(ADL), PENNESHAW(PEA), 28Jul2016, SEA , ,...) -->
+                  <span class="method-name">testcases_ShipItineraryTest</span>
+                  <span class="parameters">(Y,Check Ship Itinerary #4,AU,,4,SEALINK(SE2),ADELAIDE(ADL),PENNESHAW(PEA),28Jul2016,SEA ,,4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_ShipItineraryTest(Y, Check Ship Itinerary #1, AU, ADS0439790C, 1, *(ZZ ), PENNESHAW(PEA), ADELAIDE(ADL), 25Jul2016, SE...)">
+                  </a> <!-- testcases_ShipItineraryTest(Y, Check Ship Itinerary #1, AU, ADS0439790C, 1, *(ZZ ), PENNESHAW(PEA), ADELAIDE(ADL), 25Jul2016, SE...) -->
+                  <span class="method-name">testcases_ShipItineraryTest</span>
+                  <span class="parameters">(Y,Check Ship Itinerary #1,AU,ADS0439790C,1,*(ZZ ),PENNESHAW(PEA),ADELAIDE(ADL),25Jul2016,SEA ,,1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">production_accounting.NonBSPTicketTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_NonBSPTicketTest(Y, Check Non-BSP Ticket #2, AU, , Non BSP Document, ASF, AIRLINE SURCHARGE FEE, 8, , 2)">
+                  </a> <!-- testcases_NonBSPTicketTest(Y, Check Non-BSP Ticket #2, AU, , Non BSP Document, ASF, AIRLINE SURCHARGE FEE, 8, , 2) -->
+                  <span class="method-name">testcases_NonBSPTicketTest</span>
+                  <span class="parameters">(Y,Check Non-BSP Ticket #2,AU,,Non BSP Document,ASF,AIRLINE SURCHARGE FEE,8,,2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcases_NonBSPTicketTest(Y, Check Non-BSP Ticket #1, AU, M8V0091506C, Non BSP Document, DOB, DOM OBT FEE, 1, , 1)">
+                  </a> <!-- testcases_NonBSPTicketTest(Y, Check Non-BSP Ticket #1, AU, M8V0091506C, Non BSP Document, DOB, DOM OBT FEE, 1, , 1) -->
+                  <span class="method-name">testcases_NonBSPTicketTest</span>
+                  <span class="parameters">(Y,Check Non-BSP Ticket #1,AU,M8V0091506C,Non BSP Document,DOB,DOM OBT FEE,1,,1)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -272,6 +1492,18 @@
     &lt;classes&gt;
       &lt;class name=&quot;general.LoginTest&quot;/&gt;
       &lt;class name=&quot;general.ChangeBranchTest&quot;/&gt;
+      &lt;class name=&quot;general.ClientfileSearchTest&quot;/&gt;
+      &lt;class name=&quot;production_itineraries.AirItineraryTest&quot;/&gt;
+      &lt;class name=&quot;production_itineraries.HotelItineraryTest&quot;/&gt;
+      &lt;class name=&quot;production_itineraries.CarItineraryTest&quot;/&gt;
+      &lt;class name=&quot;production_itineraries.TourItineraryTest&quot;/&gt;
+      &lt;class name=&quot;production_itineraries.ShipItineraryTest&quot;/&gt;
+      &lt;class name=&quot;production_itineraries.InsuranceItineraryTest&quot;/&gt;
+      &lt;class name=&quot;production_itineraries.MiscItineraryTest&quot;/&gt;
+      &lt;class name=&quot;production_itineraries.RailItineraryTest&quot;/&gt;
+      &lt;class name=&quot;production_itineraries.BusItineraryTest&quot;/&gt;
+      &lt;class name=&quot;production_accounting.BSPTicketTest&quot;/&gt;
+      &lt;class name=&quot;production_accounting.NonBSPTicketTest&quot;/&gt;
       &lt;class name=&quot;queues.RMITest&quot;/&gt;
       &lt;class name=&quot;general.LogoutTest&quot;/&gt;
     &lt;/classes&gt;
@@ -287,7 +1519,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">AU MyMatrix Production Promotion Testsuite (4 classes)</span>
+                <span class="test-name">AU MyMatrix Production Promotion Testsuite (16 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -313,44 +1545,272 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(65);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testcases_LoginTest')
 data.setCell(0, 2, 'general.LoginTest')
-data.setCell(0, 3, 41717);
+data.setCell(0, 3, 44552);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testcases_LoginTest')
 data.setCell(1, 2, 'general.LoginTest')
-data.setCell(1, 3, 32446);
+data.setCell(1, 3, 43747);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testcases_RMITest')
-data.setCell(2, 2, 'queues.RMITest')
-data.setCell(2, 3, 16323);
+data.setCell(2, 1, 'testcases_LoginTest')
+data.setCell(2, 2, 'general.LoginTest')
+data.setCell(2, 3, 32889);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testcases_RMITest')
-data.setCell(3, 2, 'queues.RMITest')
-data.setCell(3, 3, 15954);
+data.setCell(3, 1, 'testcases_ClientfileSearchTest')
+data.setCell(3, 2, 'general.ClientfileSearchTest')
+data.setCell(3, 3, 30680);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testcases_RMITest')
-data.setCell(4, 2, 'queues.RMITest')
-data.setCell(4, 3, 15853);
+data.setCell(4, 1, 'testcases_LoginTest')
+data.setCell(4, 2, 'general.LoginTest')
+data.setCell(4, 3, 28652);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testcases_RMITest')
-data.setCell(5, 2, 'queues.RMITest')
-data.setCell(5, 3, 15613);
+data.setCell(5, 1, 'testcases_ShipItineraryTest')
+data.setCell(5, 2, 'production_itineraries.ShipItineraryTest')
+data.setCell(5, 3, 23800);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testcases_LogoutTest')
-data.setCell(6, 2, 'general.LogoutTest')
-data.setCell(6, 3, 3909);
+data.setCell(6, 1, 'testcases_ClientfileSearchTest')
+data.setCell(6, 2, 'general.ClientfileSearchTest')
+data.setCell(6, 3, 23639);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testcases_ChangeBranchTest')
-data.setCell(7, 2, 'general.ChangeBranchTest')
-data.setCell(7, 3, 1712);
+data.setCell(7, 1, 'testcases_NonBSPTicketTest')
+data.setCell(7, 2, 'production_accounting.NonBSPTicketTest')
+data.setCell(7, 3, 22914);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testcases_HotelItineraryTest')
+data.setCell(8, 2, 'production_itineraries.HotelItineraryTest')
+data.setCell(8, 3, 22169);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testcases_AirItineraryTest')
+data.setCell(9, 2, 'production_itineraries.AirItineraryTest')
+data.setCell(9, 3, 21470);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testcases_InsuranceItineraryTest')
+data.setCell(10, 2, 'production_itineraries.InsuranceItineraryTest')
+data.setCell(10, 3, 21245);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testcases_AirItineraryTest')
+data.setCell(11, 2, 'production_itineraries.MiscItineraryTest')
+data.setCell(11, 3, 21162);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testcases_TourItineraryTest')
+data.setCell(12, 2, 'production_itineraries.TourItineraryTest')
+data.setCell(12, 3, 20675);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testcases_ClientfileSearchTest')
+data.setCell(13, 2, 'general.ClientfileSearchTest')
+data.setCell(13, 3, 20672);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testcases_InsuranceItineraryTest')
+data.setCell(14, 2, 'production_itineraries.InsuranceItineraryTest')
+data.setCell(14, 3, 20589);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testcases_BusItineraryTest')
+data.setCell(15, 2, 'production_itineraries.BusItineraryTest')
+data.setCell(15, 3, 20517);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testcases_TourItineraryTest')
+data.setCell(16, 2, 'production_itineraries.TourItineraryTest')
+data.setCell(16, 3, 20444);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testcases_TourItineraryTest')
+data.setCell(17, 2, 'production_itineraries.TourItineraryTest')
+data.setCell(17, 3, 20393);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testcases_TourItineraryTest')
+data.setCell(18, 2, 'production_itineraries.TourItineraryTest')
+data.setCell(18, 3, 20383);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testcases_RailItineraryTest')
+data.setCell(19, 2, 'production_itineraries.RailItineraryTest')
+data.setCell(19, 3, 20205);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testcases_InsuranceItineraryTest')
+data.setCell(20, 2, 'production_itineraries.InsuranceItineraryTest')
+data.setCell(20, 3, 20143);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testcases_InsuranceItineraryTest')
+data.setCell(21, 2, 'production_itineraries.InsuranceItineraryTest')
+data.setCell(21, 3, 19787);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testcases_CarItineraryTest')
+data.setCell(22, 2, 'production_itineraries.CarItineraryTest')
+data.setCell(22, 3, 19712);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testcases_ClientfileSearchTest')
+data.setCell(23, 2, 'general.ClientfileSearchTest')
+data.setCell(23, 3, 19463);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testcases_RMITest')
+data.setCell(24, 2, 'queues.RMITest')
+data.setCell(24, 3, 18514);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testcases_ClientfileSearchTest')
+data.setCell(25, 2, 'general.ClientfileSearchTest')
+data.setCell(25, 3, 18497);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testcases_ClientfileSearchTest')
+data.setCell(26, 2, 'general.ClientfileSearchTest')
+data.setCell(26, 3, 17614);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testcases_RMITest')
+data.setCell(27, 2, 'queues.RMITest')
+data.setCell(27, 3, 17597);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testcases_RMITest')
+data.setCell(28, 2, 'queues.RMITest')
+data.setCell(28, 3, 17509);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testcases_BSPTicketTest')
+data.setCell(29, 2, 'production_accounting.BSPTicketTest')
+data.setCell(29, 3, 17431);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testcases_RMITest')
+data.setCell(30, 2, 'queues.RMITest')
+data.setCell(30, 3, 17399);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testcases_ClientfileSearchTest')
+data.setCell(31, 2, 'general.ClientfileSearchTest')
+data.setCell(31, 3, 17261);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'testcases_ClientfileSearchTest')
+data.setCell(32, 2, 'general.ClientfileSearchTest')
+data.setCell(32, 3, 17251);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'testcases_ClientfileSearchTest')
+data.setCell(33, 2, 'general.ClientfileSearchTest')
+data.setCell(33, 3, 16865);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'testcases_ClientfileSearchTest')
+data.setCell(34, 2, 'general.ClientfileSearchTest')
+data.setCell(34, 3, 16649);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'testcases_ClientfileSearchTest')
+data.setCell(35, 2, 'general.ClientfileSearchTest')
+data.setCell(35, 3, 16349);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'testcases_ShipItineraryTest')
+data.setCell(36, 2, 'production_itineraries.ShipItineraryTest')
+data.setCell(36, 3, 7144);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'testcases_LogoutTest')
+data.setCell(37, 2, 'general.LogoutTest')
+data.setCell(37, 3, 6811);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'testcases_ShipItineraryTest')
+data.setCell(38, 2, 'production_itineraries.ShipItineraryTest')
+data.setCell(38, 3, 6701);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'testcases_TourItineraryTest')
+data.setCell(39, 2, 'production_itineraries.TourItineraryTest')
+data.setCell(39, 3, 6680);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'testcases_TourItineraryTest')
+data.setCell(40, 2, 'production_itineraries.TourItineraryTest')
+data.setCell(40, 3, 6639);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'testcases_InsuranceItineraryTest')
+data.setCell(41, 2, 'production_itineraries.InsuranceItineraryTest')
+data.setCell(41, 3, 6624);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'testcases_TourItineraryTest')
+data.setCell(42, 2, 'production_itineraries.TourItineraryTest')
+data.setCell(42, 3, 6623);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'testcases_InsuranceItineraryTest')
+data.setCell(43, 2, 'production_itineraries.InsuranceItineraryTest')
+data.setCell(43, 3, 6618);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'testcases_ShipItineraryTest')
+data.setCell(44, 2, 'production_itineraries.ShipItineraryTest')
+data.setCell(44, 3, 6610);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'testcases_TourItineraryTest')
+data.setCell(45, 2, 'production_itineraries.TourItineraryTest')
+data.setCell(45, 3, 6603);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'testcases_TourItineraryTest')
+data.setCell(46, 2, 'production_itineraries.TourItineraryTest')
+data.setCell(46, 3, 6594);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'testcases_TourItineraryTest')
+data.setCell(47, 2, 'production_itineraries.TourItineraryTest')
+data.setCell(47, 3, 6574);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'testcases_InsuranceItineraryTest')
+data.setCell(48, 2, 'production_itineraries.InsuranceItineraryTest')
+data.setCell(48, 3, 6556);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'testcases_TourItineraryTest')
+data.setCell(49, 2, 'production_itineraries.TourItineraryTest')
+data.setCell(49, 3, 6548);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'testcases_InsuranceItineraryTest')
+data.setCell(50, 2, 'production_itineraries.InsuranceItineraryTest')
+data.setCell(50, 3, 6543);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'testcases_TourItineraryTest')
+data.setCell(51, 2, 'production_itineraries.TourItineraryTest')
+data.setCell(51, 3, 6509);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'testcases_HotelItineraryTest')
+data.setCell(52, 2, 'production_itineraries.HotelItineraryTest')
+data.setCell(52, 3, 6068);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'testcases_HotelItineraryTest')
+data.setCell(53, 2, 'production_itineraries.HotelItineraryTest')
+data.setCell(53, 3, 5905);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'testcases_BusItineraryTest')
+data.setCell(54, 2, 'production_itineraries.BusItineraryTest')
+data.setCell(54, 3, 5790);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'testcases_NonBSPTicketTest')
+data.setCell(55, 2, 'production_accounting.NonBSPTicketTest')
+data.setCell(55, 3, 5787);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'testcases_CarItineraryTest')
+data.setCell(56, 2, 'production_itineraries.CarItineraryTest')
+data.setCell(56, 3, 5398);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'testcases_RailItineraryTest')
+data.setCell(57, 2, 'production_itineraries.RailItineraryTest')
+data.setCell(57, 3, 5249);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'testcases_AirItineraryTest')
+data.setCell(58, 2, 'production_itineraries.MiscItineraryTest')
+data.setCell(58, 3, 4724);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'testcases_RailItineraryTest')
+data.setCell(59, 2, 'production_itineraries.RailItineraryTest')
+data.setCell(59, 3, 4516);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'testcases_AirItineraryTest')
+data.setCell(60, 2, 'production_itineraries.AirItineraryTest')
+data.setCell(60, 3, 4484);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'testcases_BSPTicketTest')
+data.setCell(61, 2, 'production_accounting.BSPTicketTest')
+data.setCell(61, 3, 3626);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'testcases_ChangeBranchTest')
+data.setCell(62, 2, 'general.ChangeBranchTest')
+data.setCell(62, 3, 3127);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'testcases_BSPTicketTest')
+data.setCell(63, 2, 'production_accounting.BSPTicketTest')
+data.setCell(63, 3, 2445);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'testcases_ClientfileSearchTest')
+data.setCell(64, 2, 'general.ClientfileSearchTest')
+data.setCell(64, 3, 2189);
 window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-TestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 16 minutes</span>
               <div id="times-div-TestSuite">
               </div> <!-- times-div-TestSuite -->
             </div> <!-- times-div -->
@@ -365,15 +1825,60 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-TestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">6 ignored methods</span>
+            <span class="header-content">30 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">general.LogoutTest</span>
+              <span class="ignored-class-name">production_itineraries.TourItineraryTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">afterSuite</span>
                 <br/>
                 <span class="ignored-method-name">beforeTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">production_itineraries.CarItineraryTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">production_itineraries.BusItineraryTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">production_itineraries.MiscItineraryTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">production_itineraries.RailItineraryTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">production_itineraries.HotelItineraryTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -387,7 +1892,70 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
+              <span class="ignored-class-name">production_itineraries.InsuranceItineraryTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">general.ChangeBranchTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">general.LogoutTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">production_accounting.BSPTicketTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">production_itineraries.AirItineraryTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">general.ClientfileSearchTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">production_accounting.NonBSPTicketTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">production_itineraries.ShipItineraryTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">beforeTest</span>
                 <br/>
@@ -410,99 +1978,657 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">12344 ms</span>
+                <span class="method-start">9963 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testcases_LoginTest(Y, AU Production IRDB Login Test, AU, , AU IRDB, Y, , 1)</span>
-                <span class="method-start">13703 ms</span>
+                <span class="method-start">12279 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_LoginTest status=SKIP method=LoginTest.testcases_LoginTest(java.lang.Stri...)</span>
+                <span class="method-start">40976 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_LoginTest(Y, AU Production IRDB Login Test, AU, , AU IRDB, Y, , 1)</span>
+                <span class="method-start">40988 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=testcases_LoginTest status=SUCCESS method=LoginTest.testcases_LoginTest(java.lang.S...)</span>
-                <span class="method-start">55426 ms</span>
+                <span class="method-start">85559 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testcases_LoginTest(Y, AU Production MyMatrix Login Test, AU, , AU MyMatrix, n, , 2)</span>
-                <span class="method-start">55753 ms</span>
+                <span class="method-start">88724 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_LoginTest status=SKIP method=LoginTest.testcases_LoginTest(java.lang.Stri...)</span>
+                <span class="method-start">132497 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_LoginTest(Y, AU Production MyMatrix Login Test, AU, , AU MyMatrix, n, , 2)</span>
+                <span class="method-start">132507 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=testcases_LoginTest status=SUCCESS method=LoginTest.testcases_LoginTest(java.lang.S...)</span>
-                <span class="method-start">88206 ms</span>
+                <span class="method-start">165397 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">general.ChangeBranchTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">88412 ms</span>
+                <span class="method-start">165990 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testcases_ChangeBranchTest(Y, Change Branch Test, AU, A11101000, A11101,, , 1)</span>
-                <span class="method-start">88652 ms</span>
+                <span class="method-start">166508 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=testcases_ChangeBranchTest status=SUCCESS method=ChangeBranchTest.testcases_ChangeB...)</span>
-                <span class="method-start">90370 ms</span>
+                <span class="method-start">169651 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">general.ClientfileSearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">169946 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testcases_ClientfileSearchTest(Y, Search Clientfile via Full Name, AU, JOHNSON, TIM, , , , , , , , , , , , , , 1)</span>
+                <span class="method-start">170453 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testcases_ClientfileSearchTest(Y, Search Clientfile via Full Name, AU, JOHNSON, TIM, , , , , , , , , , , , , , 1)</span>
+                <span class="method-start">187730 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_ClientfileSearchTest status=SKIP method=ClientfileSearchTest.testcases_Cl...)</span>
+                <span class="method-start">187730 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_ClientfileSearchTest status=SUCCESS method=ClientfileSearchTest.testcases...)</span>
+                <span class="method-start">218416 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_ClientfileSearchTest(Y, Search Clientfile via PNR Locator, AU, , , IUFQVP, , , , , , , , , , , , , 2)</span>
+                <span class="method-start">218611 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_ClientfileSearchTest status=SUCCESS method=ClientfileSearchTest.testcases...)</span>
+                <span class="method-start">238096 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_ClientfileSearchTest(Y, Search Clientfile via Client File Number, AU, , , , , , AHW0587920C, AHW0587920C, , , , , , , , ,...)</span>
+                <span class="method-start">238333 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_ClientfileSearchTest status=SUCCESS method=ClientfileSearchTest.testcases...)</span>
+                <span class="method-start">256846 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_ClientfileSearchTest(Y, Search Clientfile via Departure Date & Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, ...)</span>
+                <span class="method-start">257034 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_ClientfileSearchTest status=SKIP method=ClientfileSearchTest.testcases_Cl...)</span>
+                <span class="method-start">277721 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_ClientfileSearchTest(Y, Search Clientfile via Departure Date & Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, ...)</span>
+                <span class="method-start">277724 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_ClientfileSearchTest status=SKIP method=ClientfileSearchTest.testcases_Cl...)</span>
+                <span class="method-start">295381 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_ClientfileSearchTest(Y, Search Clientfile via Departure Date & Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, ...)</span>
+                <span class="method-start">295398 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_ClientfileSearchTest status=SKIP method=ClientfileSearchTest.testcases_Cl...)</span>
+                <span class="method-start">312663 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testcases_ClientfileSearchTest(Y, Search Clientfile via Departure Date & Booking Branch, AU, , , , 17Jul2025, 19Aug2025, , , 3970, ...)</span>
+                <span class="method-start">312826 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_ClientfileSearchTest status=FAILURE method=ClientfileSearchTest.testcases...)</span>
+                <span class="method-start">329710 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_ClientfileSearchTest(Y, Search Clientfile via Booking Branch & Client File Code, AU, , , , , , , , 3970, A13970, , , , W4...)</span>
+                <span class="method-start">329714 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_ClientfileSearchTest status=SUCCESS method=ClientfileSearchTest.testcases...)</span>
+                <span class="method-start">346368 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_ClientfileSearchTest(Y, Search Clientfile via Document, AU, , , , , , , , , , Ticket, 2757809733, , , , , 6)</span>
+                <span class="method-start">346607 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_ClientfileSearchTest status=SUCCESS method=ClientfileSearchTest.testcases...)</span>
+                <span class="method-start">370257 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_ClientfileSearchTest(Y, Search Clientfile via Client File Code, AU, , , , , , , , , , , , , 11F, , , 7)</span>
+                <span class="method-start">370435 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_ClientfileSearchTest status=SKIP method=ClientfileSearchTest.testcases_Cl...)</span>
+                <span class="method-start">372635 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_ClientfileSearchTest(Y, Search Clientfile via Client File Code, AU, , , , , , , , , , , , , 11F, , , 7)</span>
+                <span class="method-start">372636 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_ClientfileSearchTest status=SUCCESS method=ClientfileSearchTest.testcases...)</span>
+                <span class="method-start">388985 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">production_itineraries.AirItineraryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">389188 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testcases_AirItineraryTest(Y, Check Air Itinerary #1, AU, GYV0258096C, 1, QANTAS AIRWAYS(QF ), 733, V, SYDNEY(SYD), ADELAIDE(AD...)</span>
+                <span class="method-start">389586 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_AirItineraryTest status=SUCCESS method=AirItineraryTest.testcases_AirItin...)</span>
+                <span class="method-start">411058 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_AirItineraryTest(Y, Check Air Itinerary #2, AU, , 2, QANTAS AIRWAYS(QF ), 744, L, ADELAIDE(ADL), SYDNEY(SYD), 27Mar20...)</span>
+                <span class="method-start">411266 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_AirItineraryTest status=SUCCESS method=AirItineraryTest.testcases_AirItin...)</span>
+                <span class="method-start">415753 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">production_itineraries.HotelItineraryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">415914 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testcases_HotelItineraryTest(Y, Check Hotel Itinerary #1, AU, 11F0042664C, 1, INTERNATIONAL HOTELS(ZZH), COUNTRY APARTMENTS, DUBB...)</span>
+                <span class="method-start">416230 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_HotelItineraryTest status=SUCCESS method=HotelItineraryTest.testcases_Hot...)</span>
+                <span class="method-start">438403 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_HotelItineraryTest(Y, Check Hotel Itinerary #2, AU, , 2, INTERNATIONAL HOTELS(ZZH), COUNTRY APARTMENTS, DUBBO(DBO), 230...)</span>
+                <span class="method-start">438628 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_HotelItineraryTest status=SUCCESS method=HotelItineraryTest.testcases_Hot...)</span>
+                <span class="method-start">444537 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_HotelItineraryTest(Y, Check Hotel Itinerary #3, AU, , 3, INTERNATIONAL HOTELS(ZZH), COUNTRY APARTMENTS, BRISBANE(BNE), ...)</span>
+                <span class="method-start">444688 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_HotelItineraryTest status=SUCCESS method=HotelItineraryTest.testcases_Hot...)</span>
+                <span class="method-start">450758 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">production_itineraries.CarItineraryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">450966 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testcases_CarItineraryTest(Y, Check Car Itinerary #1, AU, J1E94583C, 1, AVIS(ZIC), ICAR - INTERMEDIATE CAR 2-4DR, ADELAIDE(ADL)...)</span>
+                <span class="method-start">451272 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_CarItineraryTest status=SUCCESS method=CarItineraryTest.testcases_CarItin...)</span>
+                <span class="method-start">470992 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_CarItineraryTest(Y, Check Car Itinerary #2, AU, , 2, AVIS(ZIC), IFAR - INTER 4WD AUTO A/C, MELBOURNE(MEL), 09Oct2023,...)</span>
+                <span class="method-start">471172 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_CarItineraryTest status=SUCCESS method=CarItineraryTest.testcases_CarItin...)</span>
+                <span class="method-start">476570 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">production_itineraries.TourItineraryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">476743 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testcases_TourItineraryTest(Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK...)</span>
+                <span class="method-start">477289 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_TourItineraryTest status=SKIP method=TourItineraryTest.testcases_TourItin...)</span>
+                <span class="method-start">497689 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_TourItineraryTest(Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK...)</span>
+                <span class="method-start">497692 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_TourItineraryTest status=SKIP method=TourItineraryTest.testcases_TourItin...)</span>
+                <span class="method-start">518149 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_TourItineraryTest(Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK...)</span>
+                <span class="method-start">518152 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_TourItineraryTest status=SKIP method=TourItineraryTest.testcases_TourItin...)</span>
+                <span class="method-start">538538 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testcases_TourItineraryTest(Y, Check Tour Itinerary #1, AU, MDK0013416N, 1, OTHER PACKAGES(ZZP), BANGKOK SUVARNABH(BKK), BANGKOK...)</span>
+                <span class="method-start">538662 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_TourItineraryTest status=FAILURE method=TourItineraryTest.testcases_TourI...)</span>
+                <span class="method-start">559345 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_TourItineraryTest(Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, ...)</span>
+                <span class="method-start">559351 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_TourItineraryTest status=SKIP method=TourItineraryTest.testcases_TourItin...)</span>
+                <span class="method-start">565958 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_TourItineraryTest(Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, ...)</span>
+                <span class="method-start">565960 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_TourItineraryTest status=SKIP method=TourItineraryTest.testcases_TourItin...)</span>
+                <span class="method-start">572663 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_TourItineraryTest(Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, ...)</span>
+                <span class="method-start">572828 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_TourItineraryTest status=SKIP method=TourItineraryTest.testcases_TourItin...)</span>
+                <span class="method-start">579535 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testcases_TourItineraryTest(Y, Check Tour Itinerary #2, AU, , 2, QANTAS HOLIDAYS(Q91), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, ...)</span>
+                <span class="method-start">579543 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_TourItineraryTest status=FAILURE method=TourItineraryTest.testcases_TourI...)</span>
+                <span class="method-start">586189 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_TourItineraryTest(Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, T...)</span>
+                <span class="method-start">586194 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_TourItineraryTest status=SKIP method=TourItineraryTest.testcases_TourItin...)</span>
+                <span class="method-start">592746 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_TourItineraryTest(Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, T...)</span>
+                <span class="method-start">592876 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_TourItineraryTest status=SKIP method=TourItineraryTest.testcases_TourItin...)</span>
+                <span class="method-start">599388 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_TourItineraryTest(Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, T...)</span>
+                <span class="method-start">599391 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_TourItineraryTest status=SKIP method=TourItineraryTest.testcases_TourItin...)</span>
+                <span class="method-start">606003 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testcases_TourItineraryTest(Y, Check Tour Itinerary #3, AU, , 3, OTHER PACKAGES(ZZP), BRISBANE(BNE), BRISBANE(BNE), 08Aug2015, T...)</span>
+                <span class="method-start">606005 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_TourItineraryTest status=FAILURE method=TourItineraryTest.testcases_TourI...)</span>
+                <span class="method-start">612588 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">production_itineraries.ShipItineraryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">612708 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testcases_ShipItineraryTest(Y, Check Ship Itinerary #1, AU, ADS0439790C, 1, *(ZZ ), PENNESHAW(PEA), ADELAIDE(ADL), 25Jul2016, SE...)</span>
+                <span class="method-start">612961 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_ShipItineraryTest status=SUCCESS method=ShipItineraryTest.testcases_ShipI...)</span>
+                <span class="method-start">636769 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_ShipItineraryTest(Y, Check Ship Itinerary #2, AU, , 2, *(ZZ ), PENNESHAW(PEA), ADELAIDE(ADL), 25Jul2016, SEA , , 2)</span>
+                <span class="method-start">636952 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_ShipItineraryTest status=SUCCESS method=ShipItineraryTest.testcases_ShipI...)</span>
+                <span class="method-start">643565 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_ShipItineraryTest(Y, Check Ship Itinerary #3, AU, , 3, SEALINK(SE2), ADELAIDE(ADL), PENNESHAW(PEA), 28Jul2016, SEA , ,...)</span>
+                <span class="method-start">643665 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_ShipItineraryTest status=SUCCESS method=ShipItineraryTest.testcases_ShipI...)</span>
+                <span class="method-start">650366 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_ShipItineraryTest(Y, Check Ship Itinerary #4, AU, , 4, SEALINK(SE2), ADELAIDE(ADL), PENNESHAW(PEA), 28Jul2016, SEA , ,...)</span>
+                <span class="method-start">650523 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_ShipItineraryTest status=SUCCESS method=ShipItineraryTest.testcases_ShipI...)</span>
+                <span class="method-start">657673 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">production_itineraries.InsuranceItineraryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">657899 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08...)</span>
+                <span class="method-start">658234 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_InsuranceItineraryTest status=SKIP method=InsuranceItineraryTest.testcase...)</span>
+                <span class="method-start">679489 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08...)</span>
+                <span class="method-start">679494 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_InsuranceItineraryTest status=SKIP method=InsuranceItineraryTest.testcase...)</span>
+                <span class="method-start">699293 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08...)</span>
+                <span class="method-start">699297 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_InsuranceItineraryTest status=SKIP method=InsuranceItineraryTest.testcase...)</span>
+                <span class="method-start">719446 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #1, AU, S9F2139C, 1, QBE INSURANCE(QB1), SYDNEY(SYD), SYDNEY(SYD), , 08...)</span>
+                <span class="method-start">719675 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_InsuranceItineraryTest status=FAILURE method=InsuranceItineraryTest.testc...)</span>
+                <span class="method-start">740272 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRAN...)</span>
+                <span class="method-start">740283 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_InsuranceItineraryTest status=SKIP method=InsuranceItineraryTest.testcase...)</span>
+                <span class="method-start">746920 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRAN...)</span>
+                <span class="method-start">746922 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_InsuranceItineraryTest status=SKIP method=InsuranceItineraryTest.testcase...)</span>
+                <span class="method-start">753551 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRAN...)</span>
+                <span class="method-start">753703 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testcases_InsuranceItineraryTest(Y, Check Insurance Itinerary #2, AU, , 2, QBE INSURANCE(QB1), FRANKFURT INTERNATIONAL APT(FRA), FRAN...)</span>
+                <span class="method-start">760246 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_InsuranceItineraryTest status=SKIP method=InsuranceItineraryTest.testcase...)</span>
+                <span class="method-start">760246 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">production_itineraries.MiscItineraryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">766808 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">production_itineraries.InsuranceItineraryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_InsuranceItineraryTest status=FAILURE method=InsuranceItineraryTest.testc...)</span>
+                <span class="method-start">766808 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">production_itineraries.MiscItineraryTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testcases_AirItineraryTest(Y, Check Misc/Other Itinerary #1, AU, GFP17479C, 1, ADMINISTRATION FEE(CMF), DAKAR(DKR), DAKAR(DKR),...)</span>
+                <span class="method-start">767025 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_AirItineraryTest status=SUCCESS method=MiscItineraryTest.testcases_AirIti...)</span>
+                <span class="method-start">788189 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_AirItineraryTest(Y, Check Misc/Other Itinerary #2, AU, , 2, ADMIN FEE(CAF), DAKAR(DKR), DAKAR(DKR), 23Jun2012, ATX , ...)</span>
+                <span class="method-start">788393 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_AirItineraryTest status=SUCCESS method=MiscItineraryTest.testcases_AirIti...)</span>
+                <span class="method-start">793124 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">production_itineraries.RailItineraryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">793347 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testcases_RailItineraryTest(Y, Check Rail Itinerary #1, AU, 7LZ56C, 1, OTHER RAIL(XXR), 518, GENEVA RAIL(8501118), ZURICH RAIL(8...)</span>
+                <span class="method-start">793546 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_RailItineraryTest status=SUCCESS method=RailItineraryTest.testcases_RailI...)</span>
+                <span class="method-start">813764 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_RailItineraryTest(Y, Check Rail Itinerary #2, AU, , 2, OTHER RAIL(XXR), 1818, GENEVA RAIL(8501118), ZURICH RAIL(850300...)</span>
+                <span class="method-start">813947 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_RailItineraryTest status=SUCCESS method=RailItineraryTest.testcases_RailI...)</span>
+                <span class="method-start">818473 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_RailItineraryTest(Y, Check Rail Itinerary #3, AU, , 3, OTHER RAIL(XXR), 452047, GENEVA RAIL(8501118), ZURICH RAIL(8503...)</span>
+                <span class="method-start">818785 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_RailItineraryTest status=SUCCESS method=RailItineraryTest.testcases_RailI...)</span>
+                <span class="method-start">824035 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">production_itineraries.BusItineraryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">824209 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testcases_BusItineraryTest(Y, Check Bus Itinerary #1, AU, G4S346C, 1, OTHER BUS(ZZB), 9999, BUNBURY(BUY), BUNBURY(BUY), 26Jun20...)</span>
+                <span class="method-start">824474 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_BusItineraryTest status=SUCCESS method=BusItineraryTest.testcases_BusItin...)</span>
+                <span class="method-start">844999 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_BusItineraryTest(Y, Check Bus Itinerary #2, AU, , 2, OTHER BUS(ZZB), 9999, PERTH(PER), PERTH(PER), 06Aug2018, , , 2)</span>
+                <span class="method-start">845199 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_BusItineraryTest status=SUCCESS method=BusItineraryTest.testcases_BusItin...)</span>
+                <span class="method-start">850991 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">production_accounting.BSPTicketTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">851175 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testcases_BSPTicketTest(Y, Check BSP Ticket #1, AU, M7I86122C, BSP Tickets, 217, THAI AIRWAYS INTL, 2046685577, , 1)</span>
+                <span class="method-start">851388 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_BSPTicketTest status=SUCCESS method=BSPTicketTest.testcases_BSPTicketTest...)</span>
+                <span class="method-start">868823 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_BSPTicketTest(Y, Check BSP Ticket #2, AU, , BSP Tickets, 176, EMIRATES AIR, 2047964533, , 2)</span>
+                <span class="method-start">868957 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_BSPTicketTest status=SKIP method=BSPTicketTest.testcases_BSPTicketTest(ja...)</span>
+                <span class="method-start">871403 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_BSPTicketTest(Y, Check BSP Ticket #2, AU, , BSP Tickets, 176, EMIRATES AIR, 2047964533, , 2)</span>
+                <span class="method-start">871406 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_BSPTicketTest status=SUCCESS method=BSPTicketTest.testcases_BSPTicketTest...)</span>
+                <span class="method-start">875034 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">production_accounting.NonBSPTicketTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">875172 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testcases_NonBSPTicketTest(Y, Check Non-BSP Ticket #1, AU, M8V0091506C, Non BSP Document, DOB, DOM OBT FEE, 1, , 1)</span>
+                <span class="method-start">875405 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_NonBSPTicketTest status=SUCCESS method=NonBSPTicketTest.testcases_NonBSPT...)</span>
+                <span class="method-start">898322 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testcases_NonBSPTicketTest(Y, Check Non-BSP Ticket #2, AU, , Non BSP Document, ASF, AIRLINE SURCHARGE FEE, 8, , 2)</span>
+                <span class="method-start">898465 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testcases_NonBSPTicketTest status=SUCCESS method=NonBSPTicketTest.testcases_NonBSPT...)</span>
+                <span class="method-start">904256 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">queues.RMITest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">90470 ms</span>
+                <span class="method-start">904497 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testcases_RMITest(Y, RMI Search Test, AU, RMI, Search, , 1)</span>
-                <span class="method-start">90601 ms</span>
+                <span class="method-start">904716 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=testcases_RMITest status=SUCCESS method=RMITest.testcases_RMITest(java.lang.String,...)</span>
-                <span class="method-start">106927 ms</span>
+                <span class="method-start">923251 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testcases_RMITest(Y, RMI Queue Count Test, AU, RMI, Queue Count, , 2)</span>
-                <span class="method-start">107002 ms</span>
+                <span class="method-start">923394 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=testcases_RMITest status=SUCCESS method=RMITest.testcases_RMITest(java.lang.String,...)</span>
-                <span class="method-start">122857 ms</span>
+                <span class="method-start">940798 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testcases_RMITest(Y, RMA Search Test, AU, RMA, Search, , 3)</span>
-                <span class="method-start">122918 ms</span>
+                <span class="method-start">940899 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=testcases_RMITest status=SUCCESS method=RMITest.testcases_RMITest(java.lang.String,...)</span>
-                <span class="method-start">138878 ms</span>
+                <span class="method-start">958414 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testcases_RMITest(Y, RMA Queue Count Test, AU, RMA, Queue Count, , 4)</span>
-                <span class="method-start">138957 ms</span>
+                <span class="method-start">958568 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=testcases_RMITest status=SUCCESS method=RMITest.testcases_RMITest(java.lang.String,...)</span>
-                <span class="method-start">154577 ms</span>
+                <span class="method-start">976193 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">general.LogoutTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">154662 ms</span>
+                <span class="method-start">976329 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testcases_LogoutTest(Y, AU Production MyMatrix Logout Test, AU, , AU MyMatrix, Y, , 1)</span>
-                <span class="method-start">154766 ms</span>
+                <span class="method-start">976508 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=testcases_LogoutTest status=SUCCESS method=LogoutTest.testcases_LogoutTest(java.lan...)</span>
-                <span class="method-start">158680 ms</span>
+                <span class="method-start">983322 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">general.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">158826 ms</span>
+                <span class="method-start">983813 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

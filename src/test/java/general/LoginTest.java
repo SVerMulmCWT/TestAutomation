@@ -32,7 +32,7 @@ public class LoginTest extends TestBase {
 	public void beforeClass() {
 		//Inherit the method from the parent class
 		super.beforeClass();
-		
+		System.out.println(constantVariables.dataTablePath + currentDataTable);
 		//Setup the DataTable from Excel
 		excelMethods.setDataTablePath(constantVariables.dataTablePath + currentDataTable);
 		excelMethods.setSheetName("Login");

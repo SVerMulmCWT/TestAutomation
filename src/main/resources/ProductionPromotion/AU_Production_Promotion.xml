@@ -24,7 +24,7 @@
 		<classes>
 			<class name="general.LoginTest"></class>
 			<class name="general.ChangeBranchTest"></class>
-			<!-- <class name="general.ClientfileSearchTest"></class>
+			<class name="general.ClientfileSearchTest"></class>
 			<class name="production_itineraries.AirItineraryTest"></class>
 			<class name="production_itineraries.HotelItineraryTest"></class>
 			<class name="production_itineraries.CarItineraryTest"></class>
@@ -35,7 +35,7 @@
 			<class name="production_itineraries.RailItineraryTest"></class>
 			<class name="production_itineraries.BusItineraryTest"></class>
 			<class name="production_accounting.BSPTicketTest"></class>
-			<class name="production_accounting.NonBSPTicketTest"></class> -->
+			<class name="production_accounting.NonBSPTicketTest"></class>
 			<class name="queues.RMITest"></class>
 			<class name="general.LogoutTest"></class>
 		</classes>

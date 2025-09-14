@@ -5,31 +5,40 @@
     <listener class-name="analyzer.MyTransformer"/>
     <listener class-name="utilityClasses.Listeners"/>
   </listeners>
-  <test thread-count="2" parallel="tests" name="DG MyMatrix Production Promotion Testsuite(failed)">
+  <test thread-count="2" parallel="tests" name="AU MyMatrix Production Promotion Testsuite(failed)">
     <parameter name="website" value="https://accessmatrix.mycwt.com/ListUsers.aspx"/>
     <parameter name="password" value="Welcome2cwt2026!"/>
     <parameter name="browser" value="chrome"/>
-    <parameter name="dataTable" value="production\DG_Prod_DataTable.xlsx"/>
+    <parameter name="dataTable" value="production\AU_Prod_DataTable.xlsx"/>
     <parameter name="userid" value="U501sxv"/>
     <classes>
-      <class name="queues.RMITest">
+      <class name="production_itineraries.TourItineraryTest">
         <methods>
           <include name="beforeClass"/>
-          <include name="testcases_RMITest" invocation-numbers="3"/>
+          <include name="testcases_TourItineraryTest" invocation-numbers="0 1 2"/>
           <include name="afterMethod"/>
           <include name="beforeTest"/>
           <include name="afterSuite"/>
         </methods>
-      </class> <!-- queues.RMITest -->
-      <class name="production_accounting.BSPTicketTest">
+      </class> <!-- production_itineraries.TourItineraryTest -->
+      <class name="production_itineraries.InsuranceItineraryTest">
         <methods>
-          <include name="testcases_BSPTicketTest" invocation-numbers="0"/>
+          <include name="testcases_InsuranceItineraryTest" invocation-numbers="0 1"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
-          <include name="afterSuite"/>
           <include name="beforeClass"/>
+          <include name="afterSuite"/>
         </methods>
-      </class> <!-- production_accounting.BSPTicketTest -->
+      </class> <!-- production_itineraries.InsuranceItineraryTest -->
+      <class name="general.ClientfileSearchTest">
+        <methods>
+          <include name="testcases_ClientfileSearchTest" invocation-numbers="3"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- general.ClientfileSearchTest -->
     </classes>
-  </test> <!-- DG MyMatrix Production Promotion Testsuite(failed) -->
+  </test> <!-- AU MyMatrix Production Promotion Testsuite(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->
